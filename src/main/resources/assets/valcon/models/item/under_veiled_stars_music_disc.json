@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "valcon:item/under_veiled_stars_music_disc"
+  }
+}

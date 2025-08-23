@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LEMBAS);
                         output.accept(ModBlocks.SOUL_FORGE);
                         output.accept(ModBlocks.BAST_STATUE);
+                        output.accept(ModItems.STAR_TAKER_MUSIC_DISC);
                     }).build());
 
     public static void register(IEventBus eventBus) {

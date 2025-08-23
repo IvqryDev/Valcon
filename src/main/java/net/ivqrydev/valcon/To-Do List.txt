@@ -1,1 +1,15 @@
-- Nothing!
+- Add custom tips for loading screens and sleeping screens.
+- Add new paintings.
+- Remove lapis lazuli entirely.
+- Tweak the trident recipe.
+
+- Tweak boss names and behavior of:
+    Dunerider, Indomitable Devourer
+    Drakon, Harbinger of Flame
+    Nameless King, Phantasmal Night
+    Tharnok, Eternal Winter
+    Scylla, Undying Storm
+    Leviathan, Abyssal Spawn
+    Remnant, Forgotten Beast
+    Maledictus, Envoy of The Tyrant
+    Ignis, Wrath of Hell

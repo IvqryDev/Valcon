@@ -4,5 +4,13 @@
     "sounds": [
       "valcon:soul_forge_use"
     ]
+  },
+  "star_taker": {
+    "sounds": [
+      {
+        "name": "valcon:star_taker",
+        "stream": true
+      }
+    ]
   }
 }
