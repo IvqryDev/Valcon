@@ -28,7 +28,6 @@ public class Valcon {
 
     public Valcon(IEventBus modEventBus) {
 
-        // Your existing mod content registrations
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

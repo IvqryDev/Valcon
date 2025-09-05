@@ -12,7 +12,6 @@ public class ValconClient {
     @SuppressWarnings("deprecation")
     public static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
-            // any setup work
         });
     }
 
