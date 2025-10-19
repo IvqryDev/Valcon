@@ -5,11 +5,13 @@
 
 - Tweak boss names and behavior of:
     Dunerider, Indomitable Devourer
-    Drakon, Harbinger of Flame
-    Nameless King, Phantasmal Night
     Tharnok, Eternal Winter
-    Scylla, Undying Storm
+    *Nameless King, Phantasmal Night
+    Drakon, Harbinger of Flame
+    *Scylla, Undying Storm
     Leviathan, Abyssal Spawn
     Remnant, Forgotten Beast
-    Maledictus, Envoy of The Tyrant
-    Ignis, Wrath of Hell
+    Wither, The Embodiment of Death
+    *Maledictus, Envoy of The Tyrant
+    *Ignis, Wrath of Hell
+    *Umbrocron, The Eternal Tyrant of Shadow

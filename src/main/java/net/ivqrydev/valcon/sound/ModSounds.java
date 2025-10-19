@@ -24,7 +24,7 @@ public class ModSounds {
     }
 
     public static final Supplier<SoundEvent> STAR_TAKER = registerSoundEvent("star_taker");
-    public static final ResourceKey<JukeboxSong> STAR_TAKER_KEY = createSong("start_taker");
+    public static final ResourceKey<JukeboxSong> STAR_TAKER_KEY = createSong("star_taker");
 
     private static ResourceKey<JukeboxSong> createSong(String name) {
         return ResourceKey.create(Registries.JUKEBOX_SONG, ResourceLocation.fromNamespaceAndPath(Valcon.MOD_ID, name));

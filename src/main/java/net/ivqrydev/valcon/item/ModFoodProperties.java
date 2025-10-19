@@ -15,7 +15,6 @@ public class ModFoodProperties {
                 .saturationModifier(0.8f)
                 .alwaysEdible();
 
-
         ResourceLocation comfortId = ResourceLocation.fromNamespaceAndPath("farmersdelight", "comfort");
         ResourceLocation nourishmentId = ResourceLocation.fromNamespaceAndPath("farmersdelight", "nourishment");
         MobEffect comfort = BuiltInRegistries.MOB_EFFECT.get(comfortId);
