@@ -8,8 +8,6 @@ import net.ivqrydev.valcon.item.ModCreativeModeTabs;
 import net.ivqrydev.valcon.item.ModItems;
 import net.ivqrydev.valcon.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FireBlock;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.loading.FMLEnvironment;
@@ -18,7 +16,6 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import org.slf4j.Logger;
 
 @Mod(Valcon.MOD_ID)
@@ -44,13 +41,6 @@ public class Valcon {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.LEMBAS);
         }
-    }
-
-    private void commonSetup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(() -> {
-            FireBlock fire = (FireBlock) Blocks.FIRE;
-            fire.setFlammable(Blocks.COBWEB, 100, 100);
-        });
     }
 
     @SubscribeEvent
