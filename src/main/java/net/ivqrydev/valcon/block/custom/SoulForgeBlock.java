@@ -4,6 +4,7 @@ import com.mojang.serialization.MapCodec;
 import net.ivqrydev.valcon.block.entity.SoulForgeBlockEntity;
 import net.ivqrydev.valcon.item.ModItems;
 import net.ivqrydev.valcon.sound.ModSounds;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -13,7 +14,9 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -26,6 +29,8 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.component.Unbreakable;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class SoulForgeBlock extends BaseEntityBlock {
     public static final MapCodec<SoulForgeBlock> CODEC = simpleCodec(SoulForgeBlock::new);
@@ -140,5 +145,9 @@ public class SoulForgeBlock extends BaseEntityBlock {
             }
         }
         return ItemInteractionResult.SUCCESS;
+    }
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
+        tooltip.add(Component.translatable("tooltip.valcon.soul_forge.tooltip.description").withStyle(ChatFormatting.GRAY));
     }
 }

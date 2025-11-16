@@ -12,5 +12,13 @@
         "stream": true
       }
     ]
+  },
+  "devil_trigger": {
+    "sounds": [
+      {
+        "name": "valcon:devil_trigger",
+        "stream": true
+      }
+    ]
   }
 }

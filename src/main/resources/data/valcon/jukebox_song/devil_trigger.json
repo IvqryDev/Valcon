@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.valcon.devil_trigger_music_disc.desc"
+  },
+  "length_in_seconds": 405.0,
+  "sound_event": "valcon:devil_trigger"
+}

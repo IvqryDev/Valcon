@@ -49,6 +49,12 @@ public class ModItems {
                     .rarity(Rarity.RARE)
             ));
 
+    public static final DeferredItem<Item> DEVIL_TRIGGER_MUSIC_DISC = ITEMS.registerItem("devil_trigger_music_disc",
+            (properties) -> new Item(properties.jukeboxPlayable(ModSounds.DEVIL_TRIGGER_KEY)
+                    .stacksTo(1)
+                    .rarity(Rarity.RARE)
+            ));
+
     public static final DeferredItem<SwordItem> SOULBORN_BLADE = ITEMS.register("soulborn_blade",
             () -> new SwordItem(ModToolTiers.SOUL_STEEL, new Item.Properties()
                     .rarity(Rarity.RARE)
@@ -56,14 +62,6 @@ public class ModItems {
                     .durability(1024)
                     .component(DataComponents.UNBREAKABLE, new Unbreakable(true))
                     .attributes(SwordItem.createAttributes(ModToolTiers.SOUL_STEEL, 8, -3f))
-            ));
-
-    public static final DeferredItem<SwordItem> SARISSA = ITEMS.register("sarissa",
-            () -> new SwordItem(ModToolTiers.ANCIENT, new Item.Properties()
-                    .rarity(Rarity.RARE)
-                    .fireResistant()
-                    .durability(6144)
-                    .attributes(SwordItem.createAttributes(ModToolTiers.ANCIENT, 8, -2.6f))
             ));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);

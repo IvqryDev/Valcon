@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "valcon:item/devil_trigger_music_disc"
+  }
+}

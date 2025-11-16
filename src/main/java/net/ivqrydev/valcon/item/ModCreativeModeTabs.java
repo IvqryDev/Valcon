@@ -24,13 +24,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SOUL_QUARTZ);
                         output.accept(ModItems.SOUL);
                         output.accept(ModItems.MYTHRIL_CORE);
-                        output.accept(ModItems.SARISSA);
                         output.accept(ModItems.ENCHANTING_GUIDE);
                         output.accept(ModItems.COMPASS_CASTING_MOLD);
                         output.accept(ModItems.LEMBAS);
                         output.accept(ModBlocks.SOUL_FORGE);
                         output.accept(ModBlocks.BAST_STATUE);
                         output.accept(ModItems.STAR_TAKER_MUSIC_DISC);
+                        output.accept(ModItems.DEVIL_TRIGGER_MUSIC_DISC);
                     }).build());
 
     public static void register(IEventBus eventBus) {
