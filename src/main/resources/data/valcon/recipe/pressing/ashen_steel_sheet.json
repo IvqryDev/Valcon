@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "valcon:ashen_steel_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "valcon:ashen_steel_sheet"
+    }
+  ]
+}

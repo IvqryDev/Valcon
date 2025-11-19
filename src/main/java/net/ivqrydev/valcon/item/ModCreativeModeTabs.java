@@ -27,8 +27,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ENCHANTING_GUIDE);
                         output.accept(ModItems.COMPASS_CASTING_MOLD);
                         output.accept(ModItems.LEMBAS);
-                        output.accept(ModBlocks.SOUL_FORGE);
                         output.accept(ModBlocks.BAST_STATUE);
+                        output.accept(ModBlocks.SOUL_FORGE);
+                        output.accept(ModItems.ASHEN_STEEL_INGOT);
+                        output.accept(ModItems.ASHEN_STEEL_SHEET);
                         output.accept(ModItems.STAR_TAKER_MUSIC_DISC);
                         output.accept(ModItems.DEVIL_TRIGGER_MUSIC_DISC);
                     }).build());
