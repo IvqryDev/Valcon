@@ -24,7 +24,7 @@ public class ModBlocks {
                     .strength(4.5F, 3.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_BLACK)
-                    .sound(SoundType.NETHERITE_BLOCK)
+                    .sound(SoundType.DEEPSLATE)
                     .lightLevel((state) -> 15)
             ));
 
