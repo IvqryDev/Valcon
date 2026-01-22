@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="LGPL-3.0"
+
+[[mods]]
+modId="valcon"
+version="3.4"
+displayName="Valcon"
+description='''
+An addon and core mod for the Starfell modpacks. Let the stars guide you!
+'''
+
+[[dependencies.valcon]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="farmersdelight"
+type="required"
+versionRange="[1.2.9,)"
+ordering="AFTER"
+side="BOTH"

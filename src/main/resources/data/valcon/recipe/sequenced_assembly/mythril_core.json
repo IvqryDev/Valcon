@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "irons_spellbooks:mithril_ingot"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "valcon:mythril_core"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "irons_spellbooks:mithril_ingot"
+        },
+        {
+          "item": "irons_spellbooks:mithril_scrap"
+        }
+      ],
+      "results": [
+        {
+          "id": "irons_spellbooks:mithril_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "irons_spellbooks:mithril_ingot"
+        },
+        {
+          "item": "minecraft:diamond"
+        }
+      ],
+      "results": [
+        {
+          "id": "irons_spellbooks:mithril_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "irons_spellbooks:mithril_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "irons_spellbooks:mithril_ingot"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "irons_spellbooks:mithril_ingot"
+  }
+}

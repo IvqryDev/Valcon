@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "DPD",
+    "OgO"
+  ],
+  "key": {
+    "#": {
+      "item": "valcon:enchanting_guide"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "P": {
+      "item": "minecraft:purple_wool"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "id": "minecraft:enchanting_table",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "valcon:item/soulborn_blade_handheld"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "valcon:item/soulborn_blade_gui"
+    },
+    "ground": {
+      "parent": "valcon:item/soulborn_blade_gui"
+    },
+    "fixed": {
+      "parent": "valcon:item/soulborn_blade_gui"
+    }
+  }
+}

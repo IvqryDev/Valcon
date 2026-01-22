@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    "sSs",
+    "ddd"
+  ],
+  "key": {
+    "s": {
+      "item": "valcon:ashen_steel_ingot"
+    },
+    "S": {
+      "item": "valcon:soul"
+    },
+    "d": {
+      "item": "darkerdepths:polished_darkslate"
+    }
+  },
+  "result": {
+    "id": "valcon:soul_forge",
+    "count": 1
+  }
+}

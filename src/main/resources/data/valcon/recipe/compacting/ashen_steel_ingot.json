@@ -1,0 +1,30 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "supplementaries:ash"
+    },
+    {
+      "item": "supplementaries:ash"
+    },
+    {
+      "item": "minecraft:charcoal"
+    },
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "alloyed:steel_ingot"
+    }
+  ]
+}

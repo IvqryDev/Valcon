@@ -1,0 +1,14 @@
+- Add custom tips for loading screens and sleeping screens.
+
+- Tweak boss names and behavior of:
+    Dunerider, Indomitable Devourer
+    Tharnok, Eternal Winter
+    *Nameless King, Phantasmal Night
+    Drakon, Harbinger of Flame
+    *Scylla, Undying Storm
+    Leviathan, Abyssal Spawn
+    Remnant, Forgotten Beast
+    Wither, The Embodiment of Death
+    *Maledictus, Envoy of The Tyrant
+    *Ignis, Wrath of Hell
+    *Umbrocron, The Eternal Tyrant of Shadow

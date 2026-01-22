@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "valcon:block/bast_statue"
+    },
+    "facing=south": {
+      "model": "valcon:block/bast_statue",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "valcon:block/bast_statue",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "valcon:block/bast_statue",
+      "y": 90
+    }
+  }
+}

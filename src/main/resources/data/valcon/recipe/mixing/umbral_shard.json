@@ -1,0 +1,36 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "valcon:yeti_fur"
+    },
+    {
+      "item": "valcon:nightmare_scrap"
+    },
+    {
+      "item": "block_factorys_bosses:dragon_bone"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "results": [
+    {
+      "id": "valcon:umbral_shard",
+      "count": 6
+    }
+  ]
+}

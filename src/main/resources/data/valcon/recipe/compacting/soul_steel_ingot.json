@@ -1,0 +1,35 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "create:powdered_obsidian"
+    },
+    {
+      "item": "create:powdered_obsidian"
+    },
+    {
+      "item": "create:powdered_obsidian"
+    },
+    {
+      "item": "valcon:soul"
+    },
+    {
+      "item": "valcon:soul_quartz"
+    },
+    {
+      "item": "valcon:soul_quartz"
+    },
+    {
+      "item": "valcon:soul_quartz"
+    }
+  ],
+  "results": [
+    {
+      "id": "valcon:soul_steel_ingot"
+    }
+  ]
+}

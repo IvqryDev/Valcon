@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "valcon:block/soul_forge"
+    },
+    "facing=south": {
+      "model": "valcon:block/soul_forge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "valcon:block/soul_forge",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "valcon:block/soul_forge",
+      "y": 90
+    }
+  }
+}

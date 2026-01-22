@@ -1,0 +1,47 @@
+{
+  "itemGroup.valcon": "Valcon",
+  "creativetab.valcon.valcon_tab": "Valcon",
+
+  "item.valcon.soulborn_blade": "Soulborn Blade",
+  "item.valcon.soul_steel_ingot": "Soul Steel Ingot",
+  "item.valcon.soul_quartz": "Soul Quartz",
+  "item.valcon.enchanting_guide": "Enchanting Guide",
+  "item.valcon.soul": "Soul",
+  "item.valcon.mythril_core": "Mythril Core",
+  "item.valcon.compass_casting_mold": "Compass Casting Mold",
+  "item.valcon.lembas": "Lembas",
+  "item.valcon.ashen_steel_ingot": "Ashen Steel Ingot",
+  "item.valcon.ashen_steel_sheet": "Ashen Steel Sheet",
+  "item.valcon.ancient_fang": "Ancient Fang",
+  "item.valcon.yeti_fur": "Yeti Fur",
+  "item.valcon.nightmare_scrap": "Nightmare Scrap",
+  "item.valcon.umbral_shard": "Umbral Shard",
+
+  "block.valcon.soul_forge": "Soul Forge",
+  "block.valcon.bast_statue": "Bast Statue",
+
+  "painting.valcon.motivation.title": "Motivation",
+  "painting.valcon.motivation.author": "Seren Sonlu",
+
+  "item.valcon.star_taker_music_disc": "Music Disc",
+  "item.valcon.star_taker_music_disc.desc": "SociopathicFungusGirl - Star Taker",
+  "item.valcon.devil_trigger_music_disc": "Music Disc",
+  "item.valcon.devil_trigger_music_disc.desc": "Casey Edwards - Devil Trigger",
+
+  "sounds.valcon.soul_forge_use": "Soul Forge Echoes",
+
+  "tooltip.valcon.bast_statue.tooltip": "Grants resistance to players within a 24-block radius.",
+  "tooltip.valcon.soul_forge.tooltip.unworthy": "This item is unworthy.",
+  "tooltip.valcon.soul_forge.tooltip.success": "Forge successful! Item made imperishable.",
+  "tooltip.valcon.soul_forge.tooltip.description": "A magic forge capable of enhancing your equipment to be unbreakable.",
+  "tooltip.valcon.enchanting_guide.tooltip.line0": "They say this tome holds the secrets",
+  "tooltip.valcon.enchanting_guide.tooltip.line1": "to unlocking mythical gear...",
+  "tooltip.valcon.soul.tooltip": "If you listen closely, you can hear the echoes of the ancients...",
+  "tooltip.valcon.compass_casting_mold.tooltip.line0": "Compass Upgrade",
+  "tooltip.valcon.compass_casting_mold.tooltip.line1": "Applies to:",
+  "tooltip.valcon.compass_casting_mold.tooltip.line2": " §9Compass",
+  "tooltip.valcon.compass_casting_mold.tooltip.line3": "§7Ingredients:",
+  "tooltip.valcon.compass_casting_mold.tooltip.line4": " §9Gold, Emeralds, & Sculk",
+  "tooltip.valcon.umbral_shard.tooltip.line0": "The final step in the ritual.",
+  "tooltip.valcon.umbral_shard.tooltip.line1": "Are you ready?"
+}

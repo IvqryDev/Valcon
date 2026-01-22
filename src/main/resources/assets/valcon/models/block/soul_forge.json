@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "valcon:block/soul_forge_front",
+    "side": "valcon:block/soul_forge_side",
+    "top": "valcon:block/soul_forge_top",
+	"bottom": "valcon:block/soul_forge_bottom",
+    "particle": "valcon:block/soul_forge_front"
+  }
+}
