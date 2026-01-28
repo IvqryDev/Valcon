@@ -13,10 +13,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Valcon.MOD_ID);
 
-
-    public static final DeferredItem<Item> SOUL_QUARTZ = ITEMS.register("soul_quartz",
-            () -> new Item(new Item.Properties()));
-
     public static final DeferredItem<Item> ANCIENT_FANG = ITEMS.register("ancient_fang",
             () -> new Item(new Item.Properties()));
 
@@ -48,11 +44,11 @@ public class ModItems {
 
     public static final DeferredItem<Item> YETI_FUR = ITEMS.register("yeti_fur",
             () -> new Item(new Item.Properties()
-                    .rarity(Rarity.RARE)));
+                    .rarity(Rarity.UNCOMMON)));
 
     public static final DeferredItem<Item> NIGHTMARE_SCRAP = ITEMS.register("nightmare_scrap",
             () -> new Item(new Item.Properties()
-                    .rarity(Rarity.RARE)));
+                    .rarity(Rarity.UNCOMMON)));
 
     public static final DeferredItem<Item> UMBRAL_SHARD = ITEMS.register("umbral_shard",
             () -> new UmbralShardItem(new Item.Properties()

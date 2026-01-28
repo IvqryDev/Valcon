@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "irons_spellbooks:mithril_ingot"
+    "item": "oreganized:silver_ingot"
   },
   "loops": 1,
   "results": [
@@ -14,23 +14,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "irons_spellbooks:mithril_ingot"
-        },
-        {
-          "item": "irons_spellbooks:mithril_scrap"
-        }
-      ],
-      "results": [
-        {
-          "id": "irons_spellbooks:mithril_ingot"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "irons_spellbooks:mithril_ingot"
+          "item": "oreganized:silver_ingot"
         },
         {
           "item": "minecraft:diamond"
@@ -38,7 +22,39 @@
       ],
       "results": [
         {
-          "id": "irons_spellbooks:mithril_ingot"
+          "id": "oreganized:silver_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "oreganized:silver_ingot"
+        },
+        {
+          "item": "minecraft:ghast_tear"
+        }
+      ],
+      "results": [
+        {
+          "id": "oreganized:silver_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "oreganized:silver_ingot"
+        },
+        {
+          "item": "oreganized:silver_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "oreganized:silver_ingot"
         }
       ]
     },
@@ -46,17 +62,17 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "irons_spellbooks:mithril_ingot"
+          "item": "oreganized:silver_ingot"
         }
       ],
       "results": [
         {
-          "id": "irons_spellbooks:mithril_ingot"
+          "id": "oreganized:silver_ingot"
         }
       ]
     }
   ],
   "transitional_item": {
-    "id": "irons_spellbooks:mithril_ingot"
+    "id": "oreganized:silver_ingot"
   }
 }

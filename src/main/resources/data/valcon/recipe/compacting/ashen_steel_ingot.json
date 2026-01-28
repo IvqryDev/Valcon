@@ -19,12 +19,15 @@
     },
     {
       "item": "minecraft:charcoal"
+    },
+    {
+      "item": "oreganized:lead_ingot"
     }
   ],
   "results": [
     {
-      "count": 2,
-      "id": "alloyed:steel_ingot"
+      "count": 1,
+      "id": "valcon:ashen_steel_ingot"
     }
   ]
 }

@@ -21,7 +21,6 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SOULBORN_BLADE);
                         output.accept(ModItems.SOUL_STEEL_INGOT);
-                        output.accept(ModItems.SOUL_QUARTZ);
                         output.accept(ModItems.SOUL);
                         output.accept(ModItems.MYTHRIL_CORE);
                         output.accept(ModItems.ENCHANTING_GUIDE);
