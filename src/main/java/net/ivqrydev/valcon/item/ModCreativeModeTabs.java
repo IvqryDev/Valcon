@@ -31,8 +31,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ANCIENT_FANG);
                         output.accept(ModItems.ASHEN_STEEL_INGOT);
                         output.accept(ModItems.ASHEN_STEEL_SHEET);
-                        output.accept(ModItems.YETI_FUR);
-                        output.accept(ModItems.NIGHTMARE_SCRAP);
                         output.accept(ModItems.UMBRAL_SHARD);
                         output.accept(ModItems.STAR_TAKER_MUSIC_DISC);
                         output.accept(ModItems.DEVIL_TRIGGER_MUSIC_DISC);

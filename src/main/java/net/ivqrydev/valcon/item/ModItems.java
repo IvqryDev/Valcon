@@ -42,13 +42,25 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .rarity(Rarity.RARE)));
 
-    public static final DeferredItem<Item> YETI_FUR = ITEMS.register("yeti_fur",
+    public static final DeferredItem<Item> SHARD_OF_SORROW = ITEMS.register("shard_of_sorrow",
             () -> new Item(new Item.Properties()
-                    .rarity(Rarity.UNCOMMON)));
+                    .rarity(Rarity.UNCOMMON)
+                    .fireResistant()));
 
-    public static final DeferredItem<Item> NIGHTMARE_SCRAP = ITEMS.register("nightmare_scrap",
+    public static final DeferredItem<Item> SHARD_OF_SOULS = ITEMS.register("shard_of_souls",
             () -> new Item(new Item.Properties()
-                    .rarity(Rarity.UNCOMMON)));
+                    .rarity(Rarity.UNCOMMON)
+                    .fireResistant()));
+
+    public static final DeferredItem<Item> SHARD_OF_WINTER = ITEMS.register("shard_of_winter",
+            () -> new Item(new Item.Properties()
+                    .rarity(Rarity.UNCOMMON)
+                    .fireResistant()));
+
+    public static final DeferredItem<Item> SHARD_OF_WRATH = ITEMS.register("shard_of_wrath",
+            () -> new Item(new Item.Properties()
+                    .rarity(Rarity.UNCOMMON)
+                    .fireResistant()));
 
     public static final DeferredItem<Item> UMBRAL_SHARD = ITEMS.register("umbral_shard",
             () -> new UmbralShardItem(new Item.Properties()
@@ -57,7 +69,6 @@ public class ModItems {
     public static final DeferredItem<Item> LEMBAS = ITEMS.register("lembas",
             () -> new Item(new Item.Properties()
                     .food(ModFoodProperties.LEMBAS)
-                    .stacksTo(16)
             ));
 
     public static final DeferredItem<Item> STAR_TAKER_MUSIC_DISC = ITEMS.registerItem("star_taker_music_disc",

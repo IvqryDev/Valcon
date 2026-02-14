@@ -1,0 +1,15 @@
+- Tweak boss names and behavior of:
+    Dunerider, Indomitable Devourer
+    Tharnok, Eternal Winter
+    Nameless King, Phantasmal Night
+    Drakon, Harbinger of Flame
+    Serokin, The Embodiment of Death
+    Umbrocron, The Eternal Tyrant of Shadow
+
+- Valcon names:
+    Verocon, The Conquerer
+    Verison, The Vanquisher
+    Verul, The Redeemer
+    Varkon, The Champion
+    Verin, Prince of The Pantheon
+    Varael, Ruler of The Gods

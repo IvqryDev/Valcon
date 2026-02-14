@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "valcon:crystals"
+    },
+    {
+      "item": "jewelry:tanzanite"
+    }
+  ],
+  "result": {
+    "id": "armory_rpgs:redeemer_upgrade_crystal",
+    "count": 1
+  }
+}

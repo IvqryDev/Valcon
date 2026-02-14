@@ -12,8 +12,11 @@
   "item.valcon.ashen_steel_ingot": "Ashen Steel Ingot",
   "item.valcon.ashen_steel_sheet": "Ashen Steel Sheet",
   "item.valcon.ancient_fang": "Ancient Fang",
-  "item.valcon.yeti_fur": "Yeti Fur",
-  "item.valcon.nightmare_scrap": "Nightmare Scrap",
+
+  "item.valcon.shard_of_sorrow": "Shard of Sorrow",
+  "item.valcon.shard_of_souls": "Shard of Souls",
+  "item.valcon.shard_of_winter": "Shard of Winter",
+  "item.valcon.shard_of_wrath": "Shard of Wrath",
   "item.valcon.umbral_shard": "Umbral Shard",
 
   "block.valcon.soul_forge": "Soul Forge",

@@ -1,7 +1,0 @@
-- Tweak boss names and behavior of:
-    Dunerider, Indomitable Devourer
-    Tharnok, Eternal Winter
-    Nameless King, Phantasmal Night
-    Drakon, Harbinger of Flame
-    Wither, The Embodiment of Death
-    Umbrocron, The Eternal Tyrant of Shadow

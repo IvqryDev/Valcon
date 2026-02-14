@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "valcon:item/nightmare_scrap"
+    "layer0": "valcon:item/shard_of_sorrow"
   }
 }
