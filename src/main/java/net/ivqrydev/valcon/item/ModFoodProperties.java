@@ -17,16 +17,14 @@ public class ModFoodProperties {
 
         ResourceLocation comfortId = ResourceLocation.fromNamespaceAndPath("farmersdelight", "comfort");
         MobEffect comfort = BuiltInRegistries.MOB_EFFECT.get(comfortId);
+        ResourceLocation nourishmentId = ResourceLocation.fromNamespaceAndPath("farmersdelight", "nourishment");
+        MobEffect nourishment = BuiltInRegistries.MOB_EFFECT.get(nourishmentId);
 
         if (comfort != null) {
             BuiltInRegistries.MOB_EFFECT.getResourceKey(comfort)
                     .flatMap(BuiltInRegistries.MOB_EFFECT::getHolder)
                     .ifPresent(holder -> builder.effect(
                             () -> new MobEffectInstance(holder, 6000, 0, false, false, true), 1.0f)); // 5 min
-
-            
-        ResourceLocation nourishmentId = ResourceLocation.fromNamespaceAndPath("farmersdelight", "nourishment");
-        MobEffect nourishment = BuiltInRegistries.MOB_EFFECT.get(nourishmentId);
 
         if (nourishment != null) {
             BuiltInRegistries.MOB_EFFECT.getResourceKey(nourishment)
