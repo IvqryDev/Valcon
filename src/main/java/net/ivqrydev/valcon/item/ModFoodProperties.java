@@ -11,8 +11,8 @@ public class ModFoodProperties {
 
     static {
         FoodProperties.Builder builder = new FoodProperties.Builder()
-                .nutrition(16)
-                .saturationModifier(0.8f)
+                .nutrition(18)
+                .saturationModifier(1.0f)
                 .alwaysEdible();
 
         ResourceLocation comfortId = ResourceLocation.fromNamespaceAndPath("farmersdelight", "comfort");
@@ -25,6 +25,12 @@ public class ModFoodProperties {
                     .flatMap(BuiltInRegistries.MOB_EFFECT::getHolder)
                     .ifPresent(holder -> builder.effect(
                             () -> new MobEffectInstance(holder, 6000, 0, false, false, true), 1.0f)); // 5 min
+
+        if (nourishment != null) {
+            BuiltInRegistries.MOB_EFFECT.getResourceKey(nourishment)
+                    .flatMap(BuiltInRegistries.MOB_EFFECT::getHolder)
+                    .ifPresent(holder -> builder.effect(
+                            () -> new MobEffectInstance(holder, 2400, 0, false, false, true), 1.0f)); // 2 min
         }
 
         if (nourishment != null) {
