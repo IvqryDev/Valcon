@@ -28,7 +28,7 @@ public class ModFoodProperties {
         ResourceLocation nourishmentId = ResourceLocation.fromNamespaceAndPath("farmersdelight", "nourishment");
         MobEffect nourishment = BuiltInRegistries.MOB_EFFECT.get(nourishmentId);
 
-        if (comfort != null) {
+        if (nourishment != null) {
             BuiltInRegistries.MOB_EFFECT.getResourceKey(nourishment)
                     .flatMap(BuiltInRegistries.MOB_EFFECT::getHolder)
                     .ifPresent(holder -> builder.effect(
