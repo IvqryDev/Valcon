@@ -1,6 +1,6 @@
 {
   "type": "farmersdelight:cooking",
-  "experience": 3.0,
+  "experience": 2.5,
   "ingredients": [
     {
       "item": "farmersdelight:wheat_dough"
