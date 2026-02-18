@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#S#",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:obsidian"
+        },
+        "S": {
+            "item": "minecraft:skeleton_skull"
+        }
+    },
+    "result": {
+        "id": "artifacts:obsidian_skull",
+        "count": 1
+    }
+}

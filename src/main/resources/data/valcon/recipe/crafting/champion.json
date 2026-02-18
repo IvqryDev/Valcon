@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "cookscollection:baking",
   "ingredients": [
     {
       "tag": "valcon:crystals"
@@ -10,6 +10,7 @@
   ],
   "result": {
     "id": "armory_rpgs:champion_upgrade_crystal",
-    "count": 1
-  }
+    "count": 1,
+  },
+  "cookingtime": 100
 }

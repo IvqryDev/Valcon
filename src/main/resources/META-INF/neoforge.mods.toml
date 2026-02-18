@@ -32,13 +32,6 @@ ordering="AFTER"
 side="BOTH"
 
 [[dependencies.valcon]]
-modId="create"
-type="required"
-versionRange="[6.0.9,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.valcon]]
 modId="block_factorys_bosses"
 type="required"
 versionRange="[1.0.9,)"

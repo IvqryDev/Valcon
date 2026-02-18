@@ -1,15 +1,14 @@
 {
-  "type": "create:compacting",
-  "heat_requirement": "superheated",
+  "type": "cookscollection:baking",
   "ingredients": [
     {
       "item": "minecraft:netherite_ingot"
     },
     {
-      "item": "create:powdered_obsidian"
+      "item": "minecraft:obsidian"
     },
     {
-      "item": "create:powdered_obsidian"
+      "item": "minecraft:obsidian"
     },
     {
       "item": "valcon:soul"
@@ -27,9 +26,9 @@
       "item": "jewelry:sapphire"
     }
   ],
-  "results": [
-    {
-      "id": "valcon:soul_steel_ingot"
-    }
-  ]
+  "result": {
+    "id": "valcon:soul_steel_ingot",
+    "count": 1
+  },
+  "cookingtime": 600
 }

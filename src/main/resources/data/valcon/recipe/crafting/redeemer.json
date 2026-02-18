@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "cookscollection:baking",
   "ingredients": [
     {
       "tag": "valcon:crystals"
@@ -11,5 +11,6 @@
   "result": {
     "id": "armory_rpgs:redeemer_upgrade_crystal",
     "count": 1
-  }
+  },
+  "cookingtime": 100
 }

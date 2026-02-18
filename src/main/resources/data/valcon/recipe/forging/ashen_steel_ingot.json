@@ -1,6 +1,5 @@
 {
-  "type": "create:compacting",
-  "heat_requirement": "superheated",
+  "type": "cookscollection:baking",
   "ingredients": [
     {
       "item": "minecraft:iron_ingot"
@@ -24,10 +23,9 @@
       "item": "oreganized:lead_ingot"
     }
   ],
-  "results": [
-    {
-      "count": 1,
-      "id": "valcon:ashen_steel_ingot"
-    }
-  ]
+  "result": {
+    "id": "valcon:ashen_steel_ingot",
+    "count": 1
+  },
+  "cookingtime": 350
 }
