@@ -20,12 +20,15 @@
       "item": "minecraft:charcoal"
     },
     {
-      "item": "oreganized:lead_ingot"
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:blaze_powder"
     }
   ],
   "result": {
     "id": "valcon:ashen_steel_ingot",
-    "count": 1
+    "count": 2
   },
-  "cookingtime": 350
+  "cookingtime": 200
 }
