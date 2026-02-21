@@ -4,7 +4,7 @@ license="LGPL-3.0"
 
 [[mods]]
 modId="valcon"
-version="0.5"
+version="0.5.1"
 displayName="Valcon"
 description='''
 An addon and core mod for the Starfell modpacks. Let the stars guide you!
