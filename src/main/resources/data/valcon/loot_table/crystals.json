@@ -1,0 +1,15 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "valcon:crystals",
+          "expand": true
+        }
+      ]
+    }
+  ],
+  "random_sequence": "valcon:crystals"
+}
