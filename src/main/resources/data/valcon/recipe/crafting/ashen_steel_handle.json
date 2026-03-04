@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "valcon:ashen_steel_ingot"
+        }
+    },
+    "result": {
+        "id": "valcon:ashen_steel_handle",
+        "count": 2
+    }
+}
