@@ -19,6 +19,9 @@ public class ModItems {
     public static final DeferredItem<Item> ASHEN_STEEL_INGOT = ITEMS.register("ashen_steel_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> ASHEN_STEEL_HANDLE = ITEMS.register("ashen_steel_handle",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> SOUL_STEEL_INGOT = ITEMS.register("soul_steel_ingot",
             () -> new Item(new Item.Properties()
                     .rarity(Rarity.RARE)));
