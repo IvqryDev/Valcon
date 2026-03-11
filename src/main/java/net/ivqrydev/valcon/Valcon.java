@@ -17,6 +17,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.bus.api.IEventBus;
@@ -44,6 +45,10 @@ public class Valcon {
         }
     }
 
+    {
+        NeoForge.EVENT_BUS.addListener(Valcon::onRightClickBlock);
+    }
+
     private static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
         Player player = event.getEntity();
         Level level = event.getLevel();
@@ -53,7 +58,6 @@ public class Valcon {
         if (!level.isClientSide && player instanceof ServerPlayer serverPlayer) {
             if (state.getBlock() instanceof BedBlock) {
                 serverPlayer.setRespawnPosition(level.dimension(), pos, player.getYRot(), false, true);
-                serverPlayer.displayClientMessage(Component.translatable("block.minecraft.bed.set_spawn"), true);
                 event.setCanceled(true);
             }
         }
