@@ -1,5 +1,8 @@
 {
-  "type": "cookscollection:baking",
+  "type": "modestmagic:infusing",
+  "base": {
+    "item": "minecraft:experience_bottle"
+  },
   "ingredients": [
     {
       "item": "minecraft:echo_shard"
@@ -26,9 +29,10 @@
       "item": "valcon:shard_of_wrath"
     }
   ],
-  "result": {
-    "id": "valcon:umbral_shard",
-    "count": 6
-  },
-  "cookingtime": 400
+  "results": [
+    {
+      "id": "valcon:umbral_shard",
+      "count": 6
+    }
+  ]
 }
