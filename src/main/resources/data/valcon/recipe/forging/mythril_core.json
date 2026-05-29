@@ -1,22 +1,22 @@
 {
-  "type": "cookscollection:baking",
-  "ingredients": [
-    {
+  "type": "alloyed:forging_shaped",
+  "pattern": [
+    "ni ",
+    "iti",
+    " in"
+  ],
+  "key": {
+    "n": {
+      "item": "oreganized:silver_nugget"
+    },
+    "i": {
       "item": "oreganized:silver_ingot"
     },
-    {
-      "item": "oreganized:silver_ingot"
-    },
-    {
-      "item": "minecraft:ghast_tear"
-    },
-    {
+    "t": {
       "item": "minecraft:ghast_tear"
     }
-  ],
-  "result": {
-    "id": "valcon:mythril_core",
-    "count": 1
   },
-  "cookingtime": 600
+  "result": {
+    "id": "valcon:mythril_core"
+  }
 }

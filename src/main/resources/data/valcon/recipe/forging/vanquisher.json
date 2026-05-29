@@ -1,5 +1,5 @@
 {
-  "type": "cookscollection:baking",
+  "type": "alloyed:forging",
   "ingredients": [
     {
       "tag": "valcon:crystals"
@@ -11,6 +11,5 @@
   "result": {
     "id": "armory_rpgs:vanquisher_upgrade_crystal",
     "count": 1
-  },
-  "cookingtime": 100
+  }
 }
