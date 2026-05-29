@@ -34,9 +34,8 @@
   "sounds.valcon.soul_forge_use": "Soul Forge Echoes",
 
   "tooltip.valcon.bast_statue.tooltip": "Grants resistance to players within a 24-block radius.",
-
   "tooltip.valcon.soul_forge.tooltip.unworthy": "This item is unworthy.",
-  "tooltip.valcon.soul_forge.tooltip.success": "Forge complete; Item made imperishable.",
+  "tooltip.valcon.soul_forge.tooltip.success": "Forge successful! Item made imperishable.",
   "tooltip.valcon.soul_forge.tooltip.description": "A magic forge capable of enhancing your equipment to be unbreakable.",
   "tooltip.valcon.enchanting_guide.tooltip.line0": "They say this tome holds the secrets",
   "tooltip.valcon.enchanting_guide.tooltip.line1": "to unlocking mythical gear...",
