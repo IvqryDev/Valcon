@@ -13,41 +13,48 @@ An addon and core mod for the Starfell modpacks. Let the stars guide you!
 [[dependencies.valcon]]
 modId="neoforge"
 type="required"
-versionRange="[)"
+versionRange="*"
 ordering="NONE"
 side="BOTH"
 
 [[dependencies.valcon]]
 modId="farmersdelight"
 type="required"
-versionRange="[)"
+versionRange="*"
 ordering="AFTER"
 side="BOTH"
 
 [[dependencies.valcon]]
 modId="nomansland"
 type="required"
-versionRange="[)"
+versionRange="*"
 ordering="AFTER"
 side="BOTH"
 
 [[dependencies.valcon]]
 modId="block_factorys_bosses"
 type="required"
-versionRange="[)"
+versionRange="*"
 ordering="AFTER"
 side="BOTH"
 
 [[dependencies.valcon]]
 modId="biolith"
 type="required"
-versionRange="[)"
+versionRange="*"
 ordering="AFTER"
 side="BOTH"
 
 [[dependencies.valcon]]
 modId="alloyed"
 type="required"
-versionRange="[)"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="geckolib"
+type="required"
+versionRange="*"
 ordering="AFTER"
 side="BOTH"
