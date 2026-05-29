@@ -28,7 +28,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LEMBAS);
                         output.accept(ModBlocks.BAST_STATUE);
                         output.accept(ModBlocks.SOUL_FORGE);
-                        output.accept(ModItems.ANCIENT_FANG);
                         output.accept(ModItems.ASHEN_STEEL_INGOT);
                         output.accept(ModItems.ASHEN_STEEL_HANDLE);
                         output.accept(ModItems.UMBRAL_SHARD);

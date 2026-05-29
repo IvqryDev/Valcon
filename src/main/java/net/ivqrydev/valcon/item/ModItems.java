@@ -13,9 +13,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Valcon.MOD_ID);
 
-    public static final DeferredItem<Item> ANCIENT_FANG = ITEMS.register("ancient_fang",
-            () -> new Item(new Item.Properties()));
-
     public static final DeferredItem<Item> ASHEN_STEEL_INGOT = ITEMS.register("ashen_steel_ingot",
             () -> new Item(new Item.Properties()));
 
