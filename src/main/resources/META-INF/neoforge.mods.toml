@@ -4,7 +4,7 @@ license="LGPL-3.0"
 
 [[mods]]
 modId="valcon"
-version="0.6"
+version="0.7"
 displayName="Valcon"
 description='''
 An addon and core mod for the Starfell modpacks. Let the stars guide you!
@@ -13,41 +13,41 @@ An addon and core mod for the Starfell modpacks. Let the stars guide you!
 [[dependencies.valcon]]
 modId="neoforge"
 type="required"
-versionRange="[21.1,)"
+versionRange="[)"
 ordering="NONE"
 side="BOTH"
 
 [[dependencies.valcon]]
 modId="farmersdelight"
 type="required"
-versionRange="[1.2.9,)"
+versionRange="[)"
 ordering="AFTER"
 side="BOTH"
 
 [[dependencies.valcon]]
 modId="nomansland"
 type="required"
-versionRange="[1.4.6,)"
+versionRange="[)"
 ordering="AFTER"
 side="BOTH"
 
 [[dependencies.valcon]]
 modId="block_factorys_bosses"
 type="required"
-versionRange="[2.0.8,)"
+versionRange="[)"
 ordering="AFTER"
 side="BOTH"
 
 [[dependencies.valcon]]
 modId="biolith"
 type="required"
-versionRange="[3.0.10,)"
+versionRange="[)"
 ordering="AFTER"
 side="BOTH"
 
 [[dependencies.valcon]]
-modId="cookscollection"
+modId="alloyed"
 type="required"
-versionRange="[0.5.4,)"
+versionRange="[)"
 ordering="AFTER"
 side="BOTH"
