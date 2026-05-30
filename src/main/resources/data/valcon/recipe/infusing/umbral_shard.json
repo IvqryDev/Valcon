@@ -1,7 +1,7 @@
 {
   "type": "modestmagic:infusing",
   "base": {
-    "item": "minecraft:experience_bottle"
+    "item": "minecraft:amethyst_shard"
   },
   "ingredients": [
     {
