@@ -63,11 +63,6 @@ public class Valcon {
         }
     }
 
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
-        // Placeholder
-    }
-
     public static class ClientModEvents {
         @SubscribeEvent
         public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
