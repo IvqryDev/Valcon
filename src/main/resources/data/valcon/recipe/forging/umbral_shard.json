@@ -1,15 +1,6 @@
 {
-  "type": "modestmagic:infusing",
-  "base": {
-    "item": "minecraft:amethyst_shard"
-  },
+  "type": "alloyed:forging",
   "ingredients": [
-    {
-      "item": "minecraft:echo_shard"
-    },
-    {
-      "item": "minecraft:echo_shard"
-    },
     {
       "item": "minecraft:echo_shard"
     },
@@ -29,10 +20,8 @@
       "item": "valcon:shard_of_wrath"
     }
   ],
-  "results": [
-    {
-      "id": "valcon:umbral_shard",
-      "count": 6
-    }
-  ]
+  "result": {
+    "id": "valcon:umbral_shard",
+    "count": 6
+  }
 }
