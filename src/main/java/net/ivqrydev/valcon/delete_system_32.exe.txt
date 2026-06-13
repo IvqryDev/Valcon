@@ -1,5 +1,6 @@
-- Tweak boss names and behavior of:
+- Boss names:
     Dunerider, Indomitable Devourer
+    Makul, The Watcher
     Tharnok, Eternal Winter
     Nameless King, Phantasmal Night
     Drakon, Harbinger of Flame
