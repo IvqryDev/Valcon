@@ -34,7 +34,7 @@
     Acceptance response:
     "What makes you think you can stop me now?
     After seeing what little is left of your siblings,
-    You are foolish to hope."
+    You are foolish to not abandon hope."
 
     Denial response:
     "I have nothing for you but pity and sorrow.
