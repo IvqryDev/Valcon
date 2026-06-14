@@ -18,14 +18,14 @@
 - Dialogue of the first fight:
 
     Transition:
-    "Four hundred years; Four hundred years and 37 nights passed.
-    After all of this time, I would have thought you would be stronger.
+    "Four hundred years! Four hundred years and 37 nights passed!
+    After all of this time, I would have thought you would be stronger!
     Have you not seen them? Your brothers and sisters?"
 
     Acceptance:
     "I am the culmination of this world and it's people!
     I embody both spirit and flame, both flaws and strength!
-    I am perfected, I am Starfell."
+    I am perfected judgment, I am Starfell."
 
     Denial:
     "I see through you like I see through that of my masters.
