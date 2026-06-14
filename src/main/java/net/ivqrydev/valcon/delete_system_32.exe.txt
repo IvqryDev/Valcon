@@ -14,3 +14,29 @@
     Varkon, The Champion
     Verin, Prince of The Pantheon
     Varael, Ruler of The Gods
+
+- Dialogue of the first fight:
+
+    Transition:
+    "Four hundred years; Four hundred years and 37 nights passed.
+    After all of this time, I would have thought you would be stronger.
+    Have you not seen them? Your brothers and sisters?"
+
+    Acceptance:
+    "I am the culmination of this world and it's people!
+    I embody both spirit and flame, both flaws and strength!
+    I am perfected, I am Starfell."
+
+    Denial:
+    "I see through you like I see through that of my masters.
+    I am the first of my kind, and I will cement that I am the last."
+
+    Acceptance response:
+    "What makes you think you can stop me now?
+    After seeing what little is left of your siblings,
+    You are foolish to hope."
+
+    Denial response:
+    "I have nothing for you but pity and sorrow.
+    You choose to live in the confines of your lie, their lie.
+    But I will free you from these heavy chains, I will show you."
