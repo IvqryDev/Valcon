@@ -59,3 +59,17 @@ type="required"
 versionRange="*"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies.valcon]]
+modId="caverns_and_chasms"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="blueprint"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
