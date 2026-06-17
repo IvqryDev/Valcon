@@ -17,6 +17,7 @@ public class ModSounds {
             DeferredRegister.create(BuiltInRegistries.SOUND_EVENT, Valcon.MOD_ID);
 
     public static final Supplier<SoundEvent> SOUL_FORGE_USE = registerSoundEvent("soul_forge_use");
+    public static final Supplier<SoundEvent> REFRESH = registerSoundEvent("refresh");
 
     private static Supplier<SoundEvent> registerSoundEvent(String name) {
         ResourceLocation id = ResourceLocation.fromNamespaceAndPath(Valcon.MOD_ID, name);

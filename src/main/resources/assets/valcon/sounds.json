@@ -5,6 +5,12 @@
       "valcon:soul_forge_use"
     ]
   },
+  "refresh": {
+    "subtitle": "sounds.valcon.refresh",
+    "sounds": [
+      "valcon:refresh"
+    ]
+  },
   "star_taker": {
     "sounds": [
       {
