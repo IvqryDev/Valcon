@@ -16,7 +16,7 @@ public class CrumblingEffect extends MobEffect {
         this.addAttributeModifier(
                 Attributes.ARMOR,
                 MODIFIER_ID,
-                -0.5,
+                -0.33,
                 AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL
         );
     }
