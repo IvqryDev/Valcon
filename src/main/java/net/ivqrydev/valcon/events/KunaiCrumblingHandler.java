@@ -19,6 +19,9 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
+//If you're looking at this code to re-create it, go look at my other mod Crumbling Kunai.
+//https://modrinth.com/mod/crumbling-kunai
+//It's a lot nicer and has config options. This mod is only meant for my modpack.
 @EventBusSubscriber(modid = "valcon")
 public class KunaiCrumblingHandler {
 
@@ -63,19 +66,19 @@ public class KunaiCrumblingHandler {
         LivingEntity entity = event.getEntity();
         if (entity.level().isClientSide()) return;
 
-        //Fetch config options and play refresh sound effect at the player's position.
         UUID shooterId = KUNAI_SHOOTERS.remove(entity.getUUID());
         Player shooter = shooterId != null ? entity.level().getPlayerByUUID(shooterId) : null;
 
-        //If the player is null for whatever reason, like if they briefly log out, fall back onto the enemy's position.
+        //Check if the UUID is invalid. If it is, fall back onto the enemy's position
         BlockPos soundPos = (shooter != null) ? shooter.blockPosition() : entity.blockPosition();
         SoundSource soundCategory = (shooter != null) ? SoundSource.PLAYERS : entity.getSoundSource();
 
+        //Play the sound
         entity.level().playSound(
                 null,
-                entity.blockPosition(),
+                soundPos,
                 ModSounds.REFRESH.get(),
-                entity.getSoundSource(),
+                soundCategory,
                 1.0f,
                 1.0f
         );
