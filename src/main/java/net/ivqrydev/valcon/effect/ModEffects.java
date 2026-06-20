@@ -15,9 +15,6 @@ public class ModEffects {
     public static final Holder<MobEffect> ROTTEN_EFFECT = MOB_EFFECTS.register("rotten",
             () -> new RottenEffect(MobEffectCategory.HARMFUL, 0x772214));
 
-    public static final Holder<MobEffect> CRUMBLING_EFFECT = MOB_EFFECTS.register("crumbling",
-            () -> new CrumblingEffect(MobEffectCategory.HARMFUL, 0x28283E));
-
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }
