@@ -99,17 +99,17 @@ public class SoulForgeBlock extends BaseEntityBlock {
         if (level.getBlockEntity(pos) instanceof SoulForgeBlockEntity soulForgeBlockEntity) {
             ItemStack stored = soulForgeBlockEntity.inventory.getStackInSlot(0);
 
-            // Attempt to insert a durability item
+            //Attempt to insert a durability item.
             if (stored.isEmpty() && !stack.isEmpty()) {
                 if (stack.isDamageableItem()) {
                     soulForgeBlockEntity.inventory.insertItem(0, stack.copy(), false);
                     stack.shrink(1);
                     level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 2f);
                 } else {
-                    player.displayClientMessage(Component.translatable("tooltip.valcon.soul_forge.tooltip.unworthy"), true);
+                    player.displayClientMessage(Component.translatable("message.valcon.soul_forge.tooltip.unworthy"), true);
                 }
 
-                // Attempt to extract item
+                //Attempt to extract item.
             } else if (stack.isEmpty()) {
                 ItemStack extracted = soulForgeBlockEntity.inventory.extractItem(0, 1, false);
                 if (!extracted.isEmpty()) {
@@ -125,7 +125,7 @@ public class SoulForgeBlock extends BaseEntityBlock {
                         soulForgeBlockEntity.inventory.setStackInSlot(0, stored);
                         ingotStack.shrink(1);
                         level.playSound(player, pos, ModSounds.SOUL_FORGE_USE.get(), SoundSource.BLOCKS, 1f, 1f);
-                        player.displayClientMessage(Component.translatable("tooltip.valcon.soul_forge.tooltip.success"), true);
+                        player.displayClientMessage(Component.translatable("message.valcon.soul_forge.tooltip.success"), true);
                         for (int i = 0; i < 20; i++) {
                             double offsetX = level.random.nextGaussian() * 0.1;
                             double offsetY = level.random.nextDouble() * 0.1;
@@ -136,7 +136,7 @@ public class SoulForgeBlock extends BaseEntityBlock {
                             level.addParticle(ParticleTypes.SOUL_FIRE_FLAME, x, y, z, offsetX, offsetY, offsetZ);
                         }
                     } else {
-                        player.displayClientMessage(Component.translatable("tooltip.valcon.soul_forge.tooltip.unworthy"), true);
+                        player.displayClientMessage(Component.translatable("message.valcon.soul_forge.tooltip.worthy"), true);
                     }
                 }
             }

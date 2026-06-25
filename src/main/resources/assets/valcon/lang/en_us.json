@@ -37,12 +37,14 @@
   "sounds.valcon.soul_forge_use": "Soul Forge Echoes",
   "sounds.valcon.refresh": "Shuriken Refreshes",
 
+  "message.valcon.spawn_set": "Soul and flame linked.",
+  "message.valcon.soul_forge.tooltip.unworthy": "This item is unworthy.",
+  "message.valcon.soul_forge.tooltip.worthy": "This item has already been enhanced by the soul forge.",
+  "message.valcon.soul_forge.tooltip.success": "Forge successful! Item made imperishable.",
+
   "tooltip.valcon.bast_statue.tooltip": "Grants resistance to players within a 24-block radius.",
-  "tooltip.valcon.soul_forge.tooltip.unworthy": "This item is unworthy.",
-  "tooltip.valcon.soul_forge.tooltip.success": "Forge successful! Item made imperishable.",
   "tooltip.valcon.soul_forge.tooltip.description": "A magical forge capable of enhancing your equipment to be unbreakable.",
-  "tooltip.valcon.enchanting_guide.tooltip.line0": "They say this tome holds the secrets",
-  "tooltip.valcon.enchanting_guide.tooltip.line1": "to unlocking mythical gear...",
+  "tooltip.valcon.enchanting_guide.tooltip.line0": "An ancient tome inscribed with the means to create runes of great power.",
   "tooltip.valcon.soul.tooltip": "If you listen closely, you can hear hear whispers of a massacre...",
   "tooltip.valcon.compass_casting_mold.tooltip.line0": "Compass Upgrade",
   "tooltip.valcon.compass_casting_mold.tooltip.line1": "Applies to:",
