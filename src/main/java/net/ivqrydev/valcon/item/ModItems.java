@@ -27,13 +27,10 @@ public class ModItems {
             () -> new SoulItem(new Item.Properties()
                     .rarity(Rarity.RARE)));
 
-    public static final DeferredItem<Item> ENCHANTING_GUIDE = ITEMS.register("enchanting_guide",
-            () -> new EnchantingGuideItem(new Item.Properties()
+    public static final DeferredItem<Item> GREAT_RUNE_SCHEMATIC = ITEMS.register("great_rune_schematic",
+            () -> new GreatRuneSchematicItem(new Item.Properties()
                     .rarity(Rarity.RARE)));
 
-    public static final DeferredItem<Item> COMPASS_CASTING_MOLD = ITEMS.register("compass_casting_mold",
-            () -> new CompassCastingMoldItem(new Item.Properties()
-                    .rarity(Rarity.RARE)));
 
     public static final DeferredItem<Item> MYTHRIL_CORE = ITEMS.register("mythril_core",
             () -> new Item(new Item.Properties()
