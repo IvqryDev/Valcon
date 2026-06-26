@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "valcon:item/enchanting_guide"
+    "layer0": "valcon:item/great_rune_schematic"
   }
 }
