@@ -27,6 +27,9 @@ public class ModItems {
             () -> new SoulItem(new Item.Properties()
                     .rarity(Rarity.RARE)));
 
+    public static final DeferredItem<Item> ASH = ITEMS.register("ash",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> GREAT_RUNE_SCHEMATIC = ITEMS.register("great_rune_schematic",
             () -> new GreatRuneSchematicItem(new Item.Properties()
                     .rarity(Rarity.RARE)));
@@ -34,30 +37,6 @@ public class ModItems {
 
     public static final DeferredItem<Item> MYTHRIL_CORE = ITEMS.register("mythril_core",
             () -> new Item(new Item.Properties()
-                    .rarity(Rarity.RARE)));
-
-    public static final DeferredItem<Item> SHARD_OF_SORROW = ITEMS.register("shard_of_sorrow",
-            () -> new Item(new Item.Properties()
-                    .rarity(Rarity.UNCOMMON)
-                    .fireResistant()));
-
-    public static final DeferredItem<Item> SHARD_OF_SOULS = ITEMS.register("shard_of_souls",
-            () -> new Item(new Item.Properties()
-                    .rarity(Rarity.UNCOMMON)
-                    .fireResistant()));
-
-    public static final DeferredItem<Item> SHARD_OF_WINTER = ITEMS.register("shard_of_winter",
-            () -> new Item(new Item.Properties()
-                    .rarity(Rarity.UNCOMMON)
-                    .fireResistant()));
-
-    public static final DeferredItem<Item> SHARD_OF_WRATH = ITEMS.register("shard_of_wrath",
-            () -> new Item(new Item.Properties()
-                    .rarity(Rarity.UNCOMMON)
-                    .fireResistant()));
-
-    public static final DeferredItem<Item> UMBRAL_SHARD = ITEMS.register("umbral_shard",
-            () -> new UmbralShardItem(new Item.Properties()
                     .rarity(Rarity.RARE)));
 
     public static final DeferredItem<Item> LEMBAS = ITEMS.register("lembas",

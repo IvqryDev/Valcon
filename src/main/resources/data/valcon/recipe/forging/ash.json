@@ -1,0 +1,36 @@
+{
+  "type": "alloyed:forging",
+  "ingredients": [
+    {
+      "tag": "minecraft:logs_that_burn"
+    },
+    {
+      "tag": "minecraft:logs_that_burn"
+    },
+    {
+      "tag": "minecraft:logs_that_burn"
+    },
+    {
+      "tag": "minecraft:logs_that_burn"
+    },
+    {
+      "tag": "minecraft:logs_that_burn"
+    },
+    {
+      "tag": "minecraft:logs_that_burn"
+    },
+    {
+      "tag": "minecraft:logs_that_burn"
+    },
+    {
+      "tag": "minecraft:logs_that_burn"
+    },
+    {
+      "tag": "minecraft:logs_that_burn"
+    }
+  ],
+  "result": {
+    "id": "valcon:ash",
+    "count": 9
+  }
+}

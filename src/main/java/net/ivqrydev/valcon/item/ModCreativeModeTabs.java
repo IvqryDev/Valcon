@@ -29,7 +29,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SOUL_FORGE);
                         output.accept(ModItems.ASHEN_STEEL_INGOT);
                         output.accept(ModItems.ASHEN_STEEL_HANDLE);
-                        output.accept(ModItems.UMBRAL_SHARD);
+                        output.accept(ModItems.ASH);
                         output.accept(ModItems.STAR_TAKER_MUSIC_DISC);
                         output.accept(ModItems.DEVIL_TRIGGER_MUSIC_DISC);
                     }).build());
