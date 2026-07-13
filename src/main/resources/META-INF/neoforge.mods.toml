@@ -4,7 +4,7 @@ license="LGPL-3.0"
 
 [[mods]]
 modId="valcon"
-version="0.8.4.2"
+version="0.8.4.3"
 logoFile = "logo.png"
 displayName="Valcon"
 description='''
@@ -69,6 +69,34 @@ side="BOTH"
 
 [[dependencies.valcon]]
 modId="blueprint"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="jewelry"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="armory_rpgs"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="oreganized"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="accessories"
 type="required"
 versionRange="*"
 ordering="AFTER"
