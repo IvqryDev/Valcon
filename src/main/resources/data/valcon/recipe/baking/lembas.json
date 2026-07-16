@@ -1,6 +1,5 @@
 {
-  "type": "farmersdelight:cooking",
-  "experience": 3.0,
+  "type": "cookscollection:baking",
   "ingredients": [
     {
       "item": "farmersdelight:wheat_dough"
@@ -9,10 +8,16 @@
       "item": "farmersdelight:wheat_dough"
     },
     {
+      "item": "farmersdelight:wheat_dough"
+    },
+    {
+      "item": "spelunkery:rock_salt"
+    },
+    {
       "item": "minecraft:egg"
     },
     {
-      "item": "minecraft:golden_apple"
+      "item": "minecraft:gold_ingot"
     },
     {
       "item": "minecraft:honeycomb"
@@ -21,9 +26,8 @@
       "item": "nomansland:aconite"
     }
   ],
-  "recipe_book_tab": "meals",
   "result": {
-    "count": 1,
-    "id": "valcon:lembas"
+    "id": "valcon:lembas",
+    "count": 1
   }
 }

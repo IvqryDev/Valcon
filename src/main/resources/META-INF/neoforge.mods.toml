@@ -4,7 +4,7 @@ license="LGPL-3.0"
 
 [[mods]]
 modId="valcon"
-version="0.8.4.3"
+version="0.8.5"
 logoFile = "logo.png"
 displayName="Valcon"
 description='''
@@ -61,13 +61,6 @@ ordering="AFTER"
 side="BOTH"
 
 [[dependencies.valcon]]
-modId="caverns_and_chasms"
-type="required"
-versionRange="*"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.valcon]]
 modId="blueprint"
 type="required"
 versionRange="*"
@@ -97,6 +90,13 @@ side="BOTH"
 
 [[dependencies.valcon]]
 modId="accessories"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="cookscollection"
 type="required"
 versionRange="*"
 ordering="AFTER"
