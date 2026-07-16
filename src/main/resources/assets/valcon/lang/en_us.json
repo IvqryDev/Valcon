@@ -10,11 +10,12 @@
   "item.valcon.lembas": "Lembas",
   "item.valcon.ashen_steel_ingot": "Ashen Steel Ingot",
   "item.valcon.ashen_steel_handle": "Ashen Steel Handle",
-  "item.valcon.ash": "Ashen Steel Handle",
+  "item.valcon.ash": "Ash",
 
   "block.valcon.soul_forge": "Soul Forge",
   "block.valcon.bast_statue": "Bast Statue",
   "block.valcon.divine_crucible": "Divine Crucible",
+  "block.valcon.athelas": "Athelas",
 
   "painting.valcon.motivation.title": "Motivation",
   "painting.valcon.motivation.author": "Seren Sonlu",

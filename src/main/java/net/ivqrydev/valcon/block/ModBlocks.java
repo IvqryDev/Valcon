@@ -4,11 +4,13 @@ import net.ivqrydev.valcon.Valcon;
 import net.ivqrydev.valcon.block.custom.BastStatueBlock;
 import net.ivqrydev.valcon.block.custom.SoulForgeBlock;
 import net.ivqrydev.valcon.item.ModItems;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -36,6 +38,14 @@ public class ModBlocks {
                     .mapColor(MapColor.SAND)
                     .sound(SoundType.STONE)
             ));
+
+    public static final DeferredBlock<FlowerBlock> ATHELAS = registerBlock("athelas",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 6, BlockBehaviour.Properties.of()
+                    .noCollission()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .offsetType(BlockBehaviour.OffsetType.XZ)
+                    .pushReaction(PushReaction.DESTROY)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

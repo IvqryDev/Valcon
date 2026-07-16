@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#valcon:athelas_spawn",
+  "features": "valcon:athelas",
+  "step": "vegetal_decoration"
+}
