@@ -4,7 +4,7 @@ license="LGPL-3.0"
 
 [[mods]]
 modId="valcon"
-version="0.8.5.3"
+version="0.8.5.3.hotfix"
 logoFile = "logo.png"
 displayName="Valcon"
 description='''
@@ -110,7 +110,7 @@ ordering="AFTER"
 side="BOTH"
 
 [[dependencies.valcon]]
-modId="relics"
+modId="relics_rpgs"
 type="required"
 versionRange="*"
 ordering="AFTER"
