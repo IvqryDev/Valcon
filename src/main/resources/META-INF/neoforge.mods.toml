@@ -101,3 +101,6 @@ type="required"
 versionRange="*"
 ordering="AFTER"
 side="BOTH"
+
+[[mixins]]
+config = "valcon.mixins.json"
