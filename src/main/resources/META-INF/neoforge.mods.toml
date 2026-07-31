@@ -4,7 +4,7 @@ license="LGPL-3.0"
 
 [[mods]]
 modId="valcon"
-version="0.8.5.2"
+version="0.8.5.3"
 logoFile = "logo.png"
 displayName="Valcon"
 description='''
@@ -104,6 +104,27 @@ side="BOTH"
 
 [[dependencies.valcon]]
 modId="windswept"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="relics"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="artifacts"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="rogues"
 type="required"
 versionRange="*"
 ordering="AFTER"

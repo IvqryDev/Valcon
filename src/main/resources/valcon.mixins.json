@@ -6,7 +6,9 @@
   "refmap": "valcon.refmap.json",
   "mixins": [
     "HorseRestrictionMixin",
-    "FrostbiterControlMixin"
+    "FrostbiterControlMixin",
+    "FrostbiterFoodMixin",
+    "LivingEntityAccessor"
   ],
   "client": [],
   "server": []
