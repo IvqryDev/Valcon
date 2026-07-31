@@ -27,30 +27,27 @@ public abstract class FrostbiterFoodMixin {
 
     @Inject(method = "mobInteract", at = @At("HEAD"), cancellable = true)
     private void onMobInteract(Player player, InteractionHand hand, CallbackInfoReturnable<InteractionResult> cir) {
-        Frostbiter self = (Frostbiter) (Object) this;
         ItemStack stack = player.getItemInHand(hand);
-
         if (!stack.is(WindsweptItems.GINGER_ROOT.get())) return;
+
+        Frostbiter self = (Frostbiter) (Object) this;
 
         if (self.level().isClientSide) {
             cir.setReturnValue(InteractionResult.SUCCESS);
             return;
         }
 
-        TamableAnimal tamable = (TamableAnimal) (Object) this;
-        Animal animal = (Animal) (Object) this;
-
-        if (!tamable.isTame()) {
+        if (!self.isTame()) {
             if (self.getRandom().nextInt(3) == 0) {
-                tamable.tame(player);
+                self.tame(player);
                 self.level().broadcastEntityEvent(self, (byte) 7);
             } else {
                 self.level().broadcastEntityEvent(self, (byte) 6);
             }
         } else if (self.getHealth() < self.getMaxHealth()) {
             self.heal(7f);
-        } else if (animal.canFallInLove()) {
-            animal.setInLove(player);
+        } else if (self.canFallInLove()) {
+            self.setInLove(player);
         }
 
         stack.shrink(1);
