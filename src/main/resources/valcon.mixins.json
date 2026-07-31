@@ -5,7 +5,8 @@
   "compatibilityLevel": "JAVA_21",
   "refmap": "valcon.refmap.json",
   "mixins": [
-    "HorseRestrictionMixin"
+    "HorseRestrictionMixin",
+    "FrostbiterControlMixin"
   ],
   "client": [],
   "server": []

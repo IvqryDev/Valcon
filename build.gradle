@@ -18,7 +18,21 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    // Add here additional repositories if required by some of the dependencies below.
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+    maven {
+        name = "TeamAbnormals"
+        url = "https://maven.teamabnormals.com"
+    }
 }
 
 base {
@@ -133,6 +147,10 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+    compileOnly "maven.modrinth:l0h5MtkA:dowXvnvu"
+    localRuntime "maven.modrinth:l0h5MtkA:dowXvnvu"
+    compileOnly "com.teamabnormals:blueprint:1.21.1-8.1.1"
+    localRuntime "com.teamabnormals:blueprint:1.21.1-8.1.1"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
