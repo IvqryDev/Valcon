@@ -9,7 +9,9 @@
     "FrostbiterControlMixin",
     "FrostbiterFoodMixin",
     "LivingEntityAccessor",
-    "GameRendererMixin"
+    "GameRendererMixin",
+    "FeatherCloakAccessoryMixin",
+    "FeatherCloakArmorMixin"
   ],
   "client": [],
   "server": []
