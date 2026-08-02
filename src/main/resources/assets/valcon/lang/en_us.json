@@ -23,6 +23,11 @@
   "effect.valcon.rotten": "Rotten",
   "effect.valcon.crumbling": "Crumbling",
 
+  "enchantment.valcon.flash": "Fatal Flash",
+  "enchantment.valcon.flash.description": "Heightens your reaction speed to extend the parry opening.",
+  "enchantment.valcon.requite": "Requite",
+  "enchantment.valcon.requite.description": "Enhances retaliation ability of the armament to increase parry damage.",
+
   "item.valcon.star_taker_music_disc": "Music Disc",
   "item.valcon.star_taker_music_disc.desc": "SociopathicFungusGirl - Star Taker",
   "item.valcon.devil_trigger_music_disc": "Music Disc",
