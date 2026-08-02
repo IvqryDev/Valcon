@@ -11,7 +11,9 @@
     "LivingEntityAccessor",
     "GameRendererMixin",
     "FeatherCloakAccessoryMixin",
-    "FeatherCloakArmorMixin"
+    "FeatherCloakArmorMixin",
+    "ShieldEventsMixin",
+    "TooltipEventsMixin"
   ],
   "client": [],
   "server": []
