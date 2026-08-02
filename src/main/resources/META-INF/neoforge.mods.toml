@@ -4,7 +4,7 @@ license="LGPL-3.0"
 
 [[mods]]
 modId="valcon"
-version="0.8.5.6"
+version="0.8.6"
 logoFile = "logo.png"
 displayName="Valcon"
 description='''
@@ -174,6 +174,13 @@ side="BOTH"
 
 [[dependencies.valcon]]
 modId="spell_power"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="shieldexp"
 type="required"
 versionRange="*"
 ordering="AFTER"
