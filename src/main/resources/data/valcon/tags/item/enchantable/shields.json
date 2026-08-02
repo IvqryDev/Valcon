@@ -1,7 +1,22 @@
 {
   "replace": false,
   "values": [
-    "#shieldexp:item/shields",
-    "#valcon:enchantable/betrayal"
+    "shieldexp:wooden_shield",
+    "shieldexp:iron_shield",
+    "shieldexp:golden_shield",
+    "shieldexp:diamond_shield",
+    "shieldexp:netherite_shield",
+
+    "rogues:iron_dagger",
+    "rogues:golden_dagger",
+    "rogues:diamond_dagger",
+    "rogues:netherite_dagger",
+    "arsenal:unique_dagger_sw",
+
+    "rogues:iron_sickle",
+    "rogues:golden_sickle",
+    "rogues:diamond_sickle",
+    "rogues:netherite_sickle",
+    "arsenal:unique_sickle_sw"
   ]
 }
