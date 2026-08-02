@@ -26,6 +26,6 @@
     "mainhand",
     "offhand"
   ],
-  "supported_items": "#valcon:enchantable/shields",
+  "supported_items": "#valcon:enchantable/parryable",
   "weight": 5
 }
