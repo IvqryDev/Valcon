@@ -20,6 +20,9 @@
   "painting.valcon.motivation.title": "Motivation",
   "painting.valcon.motivation.author": "Seren Sonlu",
 
+  "tag.valcon.enchantable.parryable": "Shields & Finesse Weapons",
+  "tag.valcon.enchantable.betrayal": "Finesse Weapons",
+
   "effect.valcon.rotten": "Rotten",
   "effect.valcon.crumbling": "Crumbling",
 
@@ -46,7 +49,5 @@
   "tooltip.valcon.enchanting_guide.tooltip.line": "An ancient tome inscribed with the means to create runes of immense power.",
   "tooltip.valcon.soul.tooltip": "If you listen closely, you can hear hear whispers of a massacre...",
   "tooltip.valcon.umbral_shard.tooltip.line0": "The final step in the ritual.",
-  "tooltip.valcon.umbral_shard.tooltip.line1": "Are you ready?",
-
-  "tag.valcon.enchantable.betrayal": "Enchantable Finesse Weapons"
+  "tooltip.valcon.umbral_shard.tooltip.line1": "Are you ready?"
 }
