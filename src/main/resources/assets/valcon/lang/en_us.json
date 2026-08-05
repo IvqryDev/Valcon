@@ -20,8 +20,8 @@
   "painting.valcon.motivation.title": "Motivation",
   "painting.valcon.motivation.author": "Seren Sonlu",
 
-  "tag.valcon.enchantable.parryable": "Shields & Finesse Weapons",
-  "tag.valcon.enchantable.betrayal": "Finesse Weapons",
+  "tag.valcon.enchantable.betrayal": "Light Armaments",
+  "tag.valcon.enchantable.parryable": "Shields & Light Armaments",
 
   "effect.valcon.rotten": "Rotten",
   "effect.valcon.crumbling": "Crumbling",
@@ -39,15 +39,17 @@
   "sounds.valcon.soul_forge_use": "Soul Forge Echoes",
   "sounds.valcon.refresh": "Shuriken Refreshes",
 
-  "message.valcon.spawn_set": "Soul and flame linked.",
-  "message.valcon.soul_forge.tooltip.unworthy": "This item is unworthy.",
-  "message.valcon.soul_forge.tooltip.worthy": "This item has already been enhanced by the soul forge.",
-  "message.valcon.soul_forge.tooltip.success": "Forge successful! Item made imperishable.",
-
   "tooltip.valcon.bast_statue.tooltip": "Grants resistance to players within a 24 block radius.",
   "tooltip.valcon.soul_forge.tooltip.description": "A magical forge capable of enhancing your equipment to be unbreakable.",
   "tooltip.valcon.enchanting_guide.tooltip.line": "An ancient tome inscribed with the means to create runes of immense power.",
   "tooltip.valcon.soul.tooltip": "If you listen closely, you can hear hear whispers of a massacre...",
   "tooltip.valcon.umbral_shard.tooltip.line0": "The final step in the ritual.",
-  "tooltip.valcon.umbral_shard.tooltip.line1": "Are you ready?"
+  "tooltip.valcon.umbral_shard.tooltip.line1": "Are you ready?",
+
+  "message.valcon.soul_forge.unworthy": "This item is unworthy.",
+  "message.valcon.soul_forge.forge_success": "Forge successful! Armament made imperishable.",
+  "message.valcon.soul_forge.tablet_success": "Forge successful! Armament infused with a great rune.",
+  "message.valcon.soul_forge.already_infused": "This item already has the power of a great rune...",
+  "message.valcon.soul_forge.already_blessed": "This armament has already been blessed...",
+  "message.valcon.soul_forge.incompatible_tablet": "This great rune is incompatible with this armament..."
 }

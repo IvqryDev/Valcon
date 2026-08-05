@@ -78,15 +78,23 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 dependencies {
+    //Windswept
     compileOnly "maven.modrinth:l0h5MtkA:dowXvnvu"
     localRuntime "maven.modrinth:l0h5MtkA:dowXvnvu"
 
+    //Shield Expansion
     compileOnly "maven.modrinth:sjxWxSao:eDHhr3j9"
     localRuntime "maven.modrinth:sjxWxSao:eDHhr3j9"
 
+    //Modest Magic
+    compileOnly "maven.modrinth:sWRvoDiO:K7ED4ckd"
+    localRuntime "maven.modrinth:sWRvoDiO:K7ED4ckd"
+
+    //Blueprint
     compileOnly "com.teamabnormals:blueprint:1.21.1-8.1.1"
     localRuntime "com.teamabnormals:blueprint:1.21.1-8.1.1"
 
+    //Accessories
     compileOnly "io.wispforest:accessories-neoforge:1.1.0-beta.52+1.21.1"
     localRuntime "io.wispforest:accessories-neoforge:1.1.0-beta.52+1.21.1"
 }

@@ -20,7 +20,6 @@ public class SoulForgeBlockEntity extends BlockEntity {
         protected int getStackLimit(int slot, ItemStack stack) {
             return 1;
         }
-
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
@@ -30,50 +29,41 @@ public class SoulForgeBlockEntity extends BlockEntity {
         }
     };
     private float rotation;
-
     public SoulForgeBlockEntity(BlockPos pos, BlockState blockState) {
         super(ModBlockEntities.SOUL_FORGE_BE.get(), pos, blockState);
     }
-
     public float getRenderingRotation() {
-        rotation += 0.35f;
+        rotation += 0.15f;
         if(rotation >= 360) {
             rotation = 0;
         }
         return rotation;
     }
-
     public void clearContents() {
         inventory.setStackInSlot(0, ItemStack.EMPTY);
     }
-
     public void drops() {
         SimpleContainer inv = new SimpleContainer(inventory.getSlots());
         for(int i = 0; i < inventory.getSlots(); i++) {
             inv.setItem(i, inventory.getStackInSlot(i));
         }
-
         Containers.dropContents(this.level, this.worldPosition, inv);
     }
-
     @Override
     protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) {
         super.saveAdditional(tag, registries);
         tag.put("inventory", inventory.serializeNBT(registries));
     }
-
     @Override
     protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) {
         super.loadAdditional(tag, registries);
         inventory.deserializeNBT(registries, tag.getCompound("inventory"));
     }
-
     @Nullable
     @Override
     public Packet<ClientGamePacketListener> getUpdatePacket() {
         return ClientboundBlockEntityDataPacket.create(this);
     }
-
     @Override
     public CompoundTag getUpdateTag(HolderLookup.Provider pRegistries) {
         return saveWithoutMetadata(pRegistries);

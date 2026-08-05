@@ -4,7 +4,7 @@ license="LGPL-3.0"
 
 [[mods]]
 modId="valcon"
-version="0.8.6.hotfix"
+version="0.8.6.1"
 logoFile = "logo.png"
 displayName="Valcon"
 description='''
@@ -181,6 +181,13 @@ side="BOTH"
 
 [[dependencies.valcon]]
 modId="shieldexp"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="modestmagic"
 type="required"
 versionRange="*"
 ordering="AFTER"
