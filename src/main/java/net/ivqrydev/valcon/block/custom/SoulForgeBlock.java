@@ -5,6 +5,7 @@ import com.mojang.serialization.MapCodec;
 import net.ivqrydev.valcon.block.entity.SoulForgeBlockEntity;
 import net.ivqrydev.valcon.item.ModItems;
 import net.ivqrydev.valcon.sound.ModSounds;
+import net.ivqrydev.valcon.util.ModTags;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -57,7 +58,7 @@ public class SoulForgeBlock extends BaseEntityBlock {
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
 
-    //Region blockstate.
+    // Block state.
     @Override
     protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<net.minecraft.world.level.block.Block, BlockState> builder) {
         builder.add(FACING);
@@ -79,7 +80,7 @@ public class SoulForgeBlock extends BaseEntityBlock {
         return rotate(state, mirror.getRotation(state.getValue(FACING)));
     }
 
-    //Region block entity.
+    // Block entity.
     @Override
     protected @NotNull MapCodec<? extends BaseEntityBlock> codec() {
         return CODEC;
@@ -127,10 +128,10 @@ public class SoulForgeBlock extends BaseEntityBlock {
             return ItemInteractionResult.SUCCESS;
         }
 
-        //If the forge is already empty, check item in player's hand and make sure it either has durability, or has the unbreakable component.
-        //The latter is to make sure that great runes/tablets can still apply enchantments.
+        //If the forge is already empty, only accept items in the great_rune_applicable tag.
+        //Durability is only checked when soul steel is applied, great rune targets may lack it.
         if (stored.isEmpty()) {
-            if (!stack.isDamageableItem() && !stack.has(DataComponents.UNBREAKABLE)) {
+            if (!stack.is(ModTags.Items.GREAT_RUNE_APPLICABLE)) {
                 sendMessage(level, player, "message.valcon.soul_forge.unworthy");
                 return ItemInteractionResult.SUCCESS;
             }
@@ -141,7 +142,12 @@ public class SoulForgeBlock extends BaseEntityBlock {
         }
 
         //If the player applies a soul steel ingot, insert the unbreakable component onto the armament.
+        //Only damageable or already-unbreakable items are valid targets, others are unworthy.
         if (stack.getItem() == ModItems.SOUL_STEEL_INGOT.get()) {
+            if (!stored.isDamageableItem() && !stored.has(DataComponents.UNBREAKABLE)) {
+                sendMessage(level, player, "message.valcon.soul_forge.unworthy");
+                return ItemInteractionResult.SUCCESS;
+            }
             if (stored.has(DataComponents.UNBREAKABLE)) {
                 sendMessage(level, player, "message.valcon.soul_forge.already_blessed");
                 return ItemInteractionResult.SUCCESS;
@@ -151,7 +157,12 @@ public class SoulForgeBlock extends BaseEntityBlock {
             stack.shrink(1);
             sendMessage(level, player, "message.valcon.soul_forge.forge_success");
             level.playSound(player, pos, ModSounds.SOUL_FORGE_USE.get(), SoundSource.BLOCKS, 1f, 1f);
-            spawnParticles(level, pos, 20, 0.1, 0.1, ParticleTypes.SOUL_FIRE_FLAME);
+            for (int i = 0; i < 20; i++) {
+                double vx = level.random.nextGaussian() * 0.1;
+                double vy = level.random.nextDouble() * 0.1 + 0.02;
+                double vz = level.random.nextGaussian() * 0.1;
+                level.addParticle(ParticleTypes.SOUL_FIRE_FLAME, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, vx, vy, vz);
+            }
             return ItemInteractionResult.SUCCESS;
         }
 
@@ -207,10 +218,10 @@ public class SoulForgeBlock extends BaseEntityBlock {
             if (opt.isEmpty()) continue;
 
             Holder<Enchantment> holder = opt.get();
-            if (!equipment.getItem().isPrimaryItemFor(equipment, holder)) continue;
+            if (!holder.value().canEnchant(equipment)) continue;
             anyValidForItem = true;
 
-            if (!areEnchantsCompatible(existing, holder)) continue;
+            if (hasEnchantConflict(existing, holder)) continue;
             int next = mutable.getLevel(holder) + 1;
             if (next > holder.value().getMaxLevel()) continue;
 
@@ -235,8 +246,8 @@ public class SoulForgeBlock extends BaseEntityBlock {
             if (opt.isEmpty()) continue;
 
             Holder<Enchantment> holder = opt.get();
-            if (!result.getItem().isPrimaryItemFor(result, holder)) continue;
-            if (!areEnchantsCompatible(existing, holder)) continue;
+            if (!holder.value().canEnchant(result)) continue;
+            if (hasEnchantConflict(existing, holder)) continue;
 
             int next = mutable.getLevel(holder) + 1;
             if (next > holder.value().getMaxLevel()) continue;
@@ -247,23 +258,12 @@ public class SoulForgeBlock extends BaseEntityBlock {
         return result;
     }
 
-    //Return true if the given enchantment is compatible with every enchantment already on the armament.
-    private boolean areEnchantsCompatible(ItemEnchantments existing, Holder<Enchantment> enchant) {
+    //Return true if the given enchantment conflicts with any enchantment already on the armament.
+    private boolean hasEnchantConflict(ItemEnchantments existing, Holder<Enchantment> enchant) {
         for (Holder<Enchantment> e : existing.keySet()) {
-            if (!e.equals(enchant) && !Enchantment.areCompatible(e, enchant)) return false;
+            if (!e.equals(enchant) && !Enchantment.areCompatible(e, enchant)) return true;
         }
-        return true;
-    }
-
-    //Spawns flame/soul flame particles.
-    private void spawnParticles(Level level, BlockPos pos, int count, double spreadXZ, double spreadY,
-                                net.minecraft.core.particles.SimpleParticleType type) {
-        for (int i = 0; i < count; i++) {
-            double vx = level.random.nextGaussian() * spreadXZ;
-            double vy = level.random.nextDouble() * spreadY + 0.02;
-            double vz = level.random.nextGaussian() * spreadXZ;
-            level.addParticle(type, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, vx, vy, vz);
-        }
+        return false;
     }
 
     //Sends an action bar message server-side only.
