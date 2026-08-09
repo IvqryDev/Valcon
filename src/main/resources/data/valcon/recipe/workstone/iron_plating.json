@@ -1,0 +1,17 @@
+{
+  "type": "manual_labour:workstone",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "tag": "manual_labour:hammers"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "valcon:iron_plating"
+    }
+  ]
+}

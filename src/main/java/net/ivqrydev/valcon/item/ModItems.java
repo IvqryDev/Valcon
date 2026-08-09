@@ -56,6 +56,18 @@ public class ModItems {
                     .rarity(Rarity.RARE)
             ));
 
+    public static final DeferredItem<Item> IRON_PLATING = ITEMS.register("iron_plating",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> GOLD_PLATING = ITEMS.register("gold_plating",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> ASHEN_STEEL_PLATING = ITEMS.register("ashen_steel_plating",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> MYTHRIL_PLATING = ITEMS.register("mythril_plating",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<SwordItem> SOULBORN_BLADE = ITEMS.register("soulborn_blade",
             () -> new SwordItem(ModToolTiers.SOUL_STEEL, new Item.Properties()
                     .rarity(Rarity.RARE)

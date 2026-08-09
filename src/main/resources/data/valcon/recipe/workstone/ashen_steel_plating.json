@@ -1,0 +1,17 @@
+{
+  "type": "manual_labour:workstone",
+  "ingredients": [
+    {
+      "item": "valcon:ashen_steel_ingot"
+    },
+    {
+      "tag": "manual_labour:hammers"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "valcon:ashen_steel_plating"
+    }
+  ]
+}
