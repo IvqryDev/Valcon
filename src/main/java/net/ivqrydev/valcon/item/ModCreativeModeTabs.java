@@ -31,8 +31,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ASHEN_STEEL_HANDLE);
                         output.accept(ModItems.ASH);
                         output.accept(ModBlocks.ATHELAS);
+                        output.accept(ModItems.ROYAL_FABRIC);
                         output.accept(ModItems.IRON_PLATING);
                         output.accept(ModItems.GOLD_PLATING);
+                        output.accept(ModItems.SILVER_PLATING);
                         output.accept(ModItems.MYTHRIL_PLATING);
                         output.accept(ModItems.ASHEN_STEEL_PLATING);
                         output.accept(ModItems.STAR_TAKER_MUSIC_DISC);

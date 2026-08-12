@@ -56,6 +56,9 @@ public class ModItems {
                     .rarity(Rarity.RARE)
             ));
 
+    public static final DeferredItem<Item> ROYAL_FABRIC = ITEMS.register("royal_fabric",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> IRON_PLATING = ITEMS.register("iron_plating",
             () -> new Item(new Item.Properties()));
 
@@ -66,6 +69,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> MYTHRIL_PLATING = ITEMS.register("mythril_plating",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> SILVER_PLATING = ITEMS.register("silver_plating",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<SwordItem> SOULBORN_BLADE = ITEMS.register("soulborn_blade",
