@@ -5,6 +5,9 @@
     },
     "minecraft:coal": {
       "burn_time": 800
+    },
+    "minecraft:charcoal": {
+      "burn_time": 800
     }
   }
 }
