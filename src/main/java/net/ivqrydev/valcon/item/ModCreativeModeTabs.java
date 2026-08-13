@@ -19,24 +19,32 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GREAT_RUNE_SCHEMATIC.get()))
                     .title(Component.translatable("creativetab.valcon.valcon_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.SOUL_FORGE);
+                        output.accept(ModBlocks.BAST_STATUE);
+                        output.accept(ModBlocks.ATHELAS);
+
+                        output.accept(ModBlocks.IRONWOOD_LOG);
+                        output.accept(ModItems.IRONWOOD_BARK);
+
                         output.accept(ModItems.SOULBORN_BLADE);
                         output.accept(ModItems.SOUL_STEEL_INGOT);
                         output.accept(ModItems.SOUL);
                         output.accept(ModItems.MYTHRIL_CORE);
                         output.accept(ModItems.GREAT_RUNE_SCHEMATIC);
                         output.accept(ModItems.LEMBAS);
-                        output.accept(ModBlocks.BAST_STATUE);
-                        output.accept(ModBlocks.SOUL_FORGE);
+
                         output.accept(ModItems.ASHEN_STEEL_INGOT);
                         output.accept(ModItems.ASHEN_STEEL_HANDLE);
                         output.accept(ModItems.ASH);
-                        output.accept(ModBlocks.ATHELAS);
+
                         output.accept(ModItems.ROYAL_FABRIC);
+
                         output.accept(ModItems.IRON_PLATING);
                         output.accept(ModItems.GOLD_PLATING);
                         output.accept(ModItems.SILVER_PLATING);
                         output.accept(ModItems.MYTHRIL_PLATING);
                         output.accept(ModItems.ASHEN_STEEL_PLATING);
+
                         output.accept(ModItems.STAR_TAKER_MUSIC_DISC);
                         output.accept(ModItems.DEVIL_TRIGGER_MUSIC_DISC);
                     }).build());

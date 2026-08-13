@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "valcon:block/ironwood_log_top",
+    "side": "valcon:block/ironwood_log"
+  }
+}

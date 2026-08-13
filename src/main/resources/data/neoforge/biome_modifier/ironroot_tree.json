@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#valcon:has_ironroot_tree",
+  "features": "valcon:ironroot_tree",
+  "step": "underground_decoration"
+}

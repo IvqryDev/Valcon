@@ -59,6 +59,9 @@ public class ModItems {
     public static final DeferredItem<Item> ROYAL_FABRIC = ITEMS.register("royal_fabric",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> IRONWOOD_BARK = ITEMS.register("ironwood_bark",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> IRON_PLATING = ITEMS.register("iron_plating",
             () -> new Item(new Item.Properties()));
 

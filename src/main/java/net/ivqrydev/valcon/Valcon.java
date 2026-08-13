@@ -8,6 +8,7 @@ import net.ivqrydev.valcon.enchantment.EnchantmentComponents;
 import net.ivqrydev.valcon.item.ModCreativeModeTabs;
 import net.ivqrydev.valcon.item.ModItems;
 import net.ivqrydev.valcon.sound.ModSounds;
+import net.ivqrydev.valcon.worldgen.feature.ModFeatures;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -26,6 +27,7 @@ public class Valcon {
         ModBlockEntities.register(modEventBus);
         ModSounds.register(modEventBus);
         ModEffects.register(modEventBus);
+        ModFeatures.register(modEventBus);
         EnchantmentComponents.TYPES.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);

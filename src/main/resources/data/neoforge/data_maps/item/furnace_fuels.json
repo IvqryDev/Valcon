@@ -1,0 +1,10 @@
+{
+  "values": {
+    "valcon:ironwood_bark": {
+      "burn_time": 1600
+    },
+    "minecraft:coal": {
+      "burn_time": 800
+    }
+  }
+}

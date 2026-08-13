@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "valcon:block/ironwood_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "valcon:block/ironwood_log"
+    },
+    "axis=z": {
+      "model": "valcon:block/ironwood_log",
+      "x": 90
+    }
+  }
+}

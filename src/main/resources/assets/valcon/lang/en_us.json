@@ -12,6 +12,8 @@
   "item.valcon.ashen_steel_handle": "Ashen Steel Handle",
   "item.valcon.ash": "Ash",
   "item.valcon.royal_fabric": "Royal Fabric",
+  "item.valcon.ironwood": "Ironwood",
+  "item.valcon.ironwood_bark": "Ironwood Bark",
 
   "item.valcon.ashen_steel_plating": "Ashen Steel Plating",
   "item.valcon.gold_plating": "Gold Plating",
@@ -23,6 +25,7 @@
   "block.valcon.bast_statue": "Bast Statue",
   "block.valcon.divine_crucible": "Divine Crucible",
   "block.valcon.athelas": "Athelas",
+  "block.valcon.ironwood_log": "Ironwood Log",
 
   "painting.valcon.motivation.title": "Motivation",
   "painting.valcon.motivation.author": "Seren Sonlu",
