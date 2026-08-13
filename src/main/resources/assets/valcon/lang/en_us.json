@@ -61,5 +61,6 @@
   "message.valcon.soul_forge.tablet_success": "Forge successful! Armament infused with a great rune.",
   "message.valcon.soul_forge.already_infused": "This item already has the power of a great rune...",
   "message.valcon.soul_forge.already_blessed": "This armament has already been blessed...",
-  "message.valcon.soul_forge.incompatible_tablet": "This great rune is incompatible with this armament..."
+  "message.valcon.soul_forge.incompatible_tablet": "This great rune is incompatible with this armament...",
+  "message.valcon.pathetic": "You need a stronger tool to mine this!"
 }

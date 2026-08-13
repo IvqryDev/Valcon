@@ -90,6 +90,11 @@ dependencies {
     compileOnly "maven.modrinth:sWRvoDiO:K7ED4ckd"
     localRuntime "maven.modrinth:sWRvoDiO:K7ED4ckd"
 
+    //Caverns & Chasms
+    compileOnly "maven.modrinth:tfjmPSbI:xDwRcEoZ"
+    localRuntime "maven.modrinth:tfjmPSbI:xDwRcEoZ"
+
+
     //Blueprint
     compileOnly "com.teamabnormals:blueprint:1.21.1-8.1.1"
     localRuntime "com.teamabnormals:blueprint:1.21.1-8.1.1"
