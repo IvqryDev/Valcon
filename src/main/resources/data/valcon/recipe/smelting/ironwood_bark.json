@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "valcon:ironwood_log"
+  },
+  "result": {
+    "id": "valcon:ironwood_bark"
+  }
+}
