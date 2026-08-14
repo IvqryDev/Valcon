@@ -13,17 +13,14 @@ public final class InsufficientToolHandler {
 
     private InsufficientToolHandler() {}
 
-    //Tracks the last game time each player triggered a blocked mine attempt.
     private static final Map<UUID, Long> lastAttemptTime = new HashMap<>();
 
     public static boolean requiresStrongerTool(Player player, BlockState state, ItemStack held) {
-        //Block must require a specific tool.
         if (!state.requiresCorrectToolForDrops()) return false;
 
-        //Bare hands or non-tiered items are ignored.
         if (held.isEmpty() || !(held.getItem() instanceof TieredItem)) return false;
 
-        //If the tool is the correct tier, there's nothing to block. (See what I did there?)
+        //Check if tool is the correct tier.
         if (held.isCorrectToolForDrops(state)) return false;
 
         return held.getDestroySpeed(state) > 1.0F;

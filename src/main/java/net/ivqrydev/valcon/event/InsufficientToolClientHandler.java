@@ -27,7 +27,6 @@ public final class InsufficientToolClientHandler {
 
     @SubscribeEvent
     public static void onInteractionKeyMapping(InputEvent.InteractionKeyMappingTriggered event) {
-        //Only care about left-click on a block.
         if (!event.isAttack()) return;
 
         Minecraft mc = Minecraft.getInstance();
@@ -56,7 +55,6 @@ public final class InsufficientToolClientHandler {
         player.swing(event.getHand());
         spawnSparks(level, pos, face, player);
 
-        //Play the block's own breaking sound three times to sell the impact.
         SoundType sounds = state.getSoundType();
         for (int i = 0; i < 3; i++) {
             level.playSound(player, pos, sounds.getBreakSound(), player.getSoundSource(),
