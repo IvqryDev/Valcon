@@ -2,6 +2,7 @@ package net.ivqrydev.valcon;
 
 import net.ivqrydev.valcon.block.ModBlocks;
 import net.ivqrydev.valcon.block.entity.ModBlockEntities;
+import net.ivqrydev.valcon.compat.AccessoryUniqueness;
 import net.ivqrydev.valcon.compat.FeatherCloakAccessory;
 import net.ivqrydev.valcon.effect.ModEffects;
 import net.ivqrydev.valcon.enchantment.EnchantmentComponents;
@@ -17,9 +18,9 @@ import net.neoforged.fml.loading.FMLEnvironment;
 
 @Mod(Valcon.MOD_ID)
 public class Valcon {
-
     public static final String MOD_ID = "valcon";
 
+    //Registry stuff.
     public Valcon(IEventBus modEventBus) {
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
@@ -31,7 +32,6 @@ public class Valcon {
         EnchantmentComponents.TYPES.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
-
         if (FMLEnvironment.dist == Dist.CLIENT) {
             modEventBus.addListener(ValconClient::onClientSetup);
             modEventBus.addListener(ValconClient::registerBER);
@@ -40,5 +40,6 @@ public class Valcon {
 
     private void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(FeatherCloakAccessory::register);
+        event.enqueueWork(AccessoryUniqueness::init);
     }
 }
