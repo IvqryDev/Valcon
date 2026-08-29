@@ -15,6 +15,9 @@
   "item.valcon.ironwood": "Ironwood",
   "item.valcon.ironwood_bark": "Ironwood Bark",
 
+  "item.valcon.red_queen": "Red Queen",
+  "item.valcon.red_queen.exceed": "Exceed: %s/3",
+
   "item.valcon.ashen_steel_plating": "Ashen Steel Plating",
   "item.valcon.gold_plating": "Gold Plating",
   "item.valcon.iron_plating": "Iron Plating",
@@ -48,6 +51,8 @@
 
   "sounds.valcon.soul_forge_use": "Soul Forge Echoes",
   "sounds.valcon.refresh": "Shuriken Refreshes",
+  "sounds.valcon.rev": "Red Queen Revs",
+  "sounds.valcon.exceed": "Red Queen Exceeds",
 
   "tooltip.valcon.bast_statue.tooltip": "Grants resistance to players within a 24 block radius.",
   "tooltip.valcon.soul_forge.tooltip.description": "A magical forge capable of enhancing your equipment to be unbreakable.",

@@ -11,6 +11,18 @@
       "valcon:refresh"
     ]
   },
+  "rev": {
+    "subtitle": "sounds.valcon.rev",
+    "sounds": [
+      "valcon:rev"
+    ]
+  },
+  "exceed": {
+    "subtitle": "sounds.valcon.exceed",
+    "sounds": [
+      "valcon:exceed"
+    ]
+  },
   "star_taker": {
     "sounds": [
       {

@@ -17,6 +17,8 @@ public class ModSounds {
             DeferredRegister.create(BuiltInRegistries.SOUND_EVENT, Valcon.MOD_ID);
 
     public static final Supplier<SoundEvent> SOUL_FORGE_USE = registerSoundEvent("soul_forge_use");
+    public static final Supplier<SoundEvent> REV = registerSoundEvent("rev");
+    public static final Supplier<SoundEvent> EXCEED = registerSoundEvent("exceed");
     public static final Supplier<SoundEvent> REFRESH = registerSoundEvent("refresh");
 
     private static Supplier<SoundEvent> registerSoundEvent(String name) {
