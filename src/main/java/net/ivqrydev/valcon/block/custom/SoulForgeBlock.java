@@ -26,6 +26,8 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.Unbreakable;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.item.crafting.SmithingRecipeInput;
+import net.minecraft.world.item.crafting.SmithingTransformRecipe;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.ItemEnchantments;
@@ -142,7 +144,6 @@ public class SoulForgeBlock extends BaseEntityBlock {
         }
 
         //If the player applies a soul steel ingot, insert the unbreakable component onto the armament.
-        //Only damageable or already-unbreakable items are valid targets, others are unworthy.
         if (stack.getItem() == ModItems.SOUL_STEEL_INGOT.get()) {
             if (!stored.isDamageableItem() && !stored.has(DataComponents.UNBREAKABLE)) {
                 sendMessage(level, player, "message.valcon.soul_forge.unworthy");
@@ -157,36 +158,48 @@ public class SoulForgeBlock extends BaseEntityBlock {
             stack.shrink(1);
             sendMessage(level, player, "message.valcon.soul_forge.forge_success");
             level.playSound(player, pos, ModSounds.SOUL_FORGE_USE.get(), SoundSource.BLOCKS, 1f, 1f);
-            for (int i = 0; i < 20; i++) {
-                double vx = level.random.nextGaussian() * 0.1;
-                double vy = level.random.nextDouble() * 0.1 + 0.02;
-                double vz = level.random.nextGaussian() * 0.1;
-                level.addParticle(ParticleTypes.SOUL_FIRE_FLAME, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, vx, vy, vz);
-            }
+            spawnSoulFireParticles(level, pos);
             return ItemInteractionResult.SUCCESS;
         }
 
         //Great runes/tablets lookup recipes and run server side only, particles run both on both server and client.
-        if (!level.isClientSide()) {
-            TabletSmithingRecipe recipe = findTabletRecipe(level, stack, stored);
-            if (recipe == null) return ItemInteractionResult.SUCCESS;
-
-            TabletResult result = tryApplyTablet(recipe, stored, level);
-            switch (result) {
-                case INCOMPATIBLE  -> sendMessage(level, player, "message.valcon.soul_forge.incompatible_tablet");
-                case ALREADY_MAXED -> sendMessage(level, player, "message.valcon.soul_forge.already_infused");
-                case SUCCESS -> {
-                    forge.inventory.setStackInSlot(0, applyTabletEnchantments(recipe, stored, level));
-                    stack.shrink(1);
-                    sendMessage(level, player, "message.valcon.soul_forge.tablet_success");
+        TabletSmithingRecipe tabletRecipe = findTabletRecipe(level, stack, stored);
+        if (tabletRecipe != null) {
+            if (!level.isClientSide()) {
+                TabletResult result = tryApplyTablet(tabletRecipe, stored, level);
+                switch (result) {
+                    case INCOMPATIBLE  -> sendMessage(level, player, "message.valcon.soul_forge.incompatible_tablet");
+                    case ALREADY_MAXED -> sendMessage(level, player, "message.valcon.soul_forge.already_infused");
+                    case SUCCESS -> {
+                        forge.inventory.setStackInSlot(0, applyTabletEnchantments(tabletRecipe, stored, level));
+                        stack.shrink(1);
+                        sendMessage(level, player, "message.valcon.soul_forge.tablet_success");
+                    }
+                }
+            } else {
+                //Play effects if the recipe exists, while the server handles the actual state change.
+                if (tryApplyTablet(tabletRecipe, stored, level) == TabletResult.SUCCESS) {
+                    level.playSound(player, pos, SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.BLOCKS, 1f, 1f);
+                    spawnSoulFireParticles(level, pos);
                 }
             }
-        } else {
-            //Play effects if the recipe exists, while the server handles the actual state change.
-            TabletSmithingRecipe recipe = findTabletRecipe(level, stack, stored);
-            if (recipe != null && tryApplyTablet(recipe, stored, level) == TabletResult.SUCCESS) {
+            return ItemInteractionResult.SUCCESS;
+        }
+
+        SmithingTransformRecipe smithingRecipe = findSmithingTransformRecipe(level, stored, stack);
+        if (smithingRecipe != null) {
+            if (!level.isClientSide()) {
+                ItemStack result = assembleSmithingResult(smithingRecipe, stored, stack, level);
+                if (!result.isEmpty()) {
+                    forge.inventory.setStackInSlot(0, result);
+                    stack.shrink(1);
+                }
+            } else {
                 level.playSound(player, pos, SoundEvents.ANVIL_USE, SoundSource.BLOCKS, 1f, 1f);
+                sendMessage(level, player, "message.valcon.soul_forge.refine");
+                spawnSoulFireParticles(level, pos);
             }
+            return ItemInteractionResult.SUCCESS;
         }
 
         return ItemInteractionResult.SUCCESS;
@@ -202,6 +215,24 @@ public class SoulForgeBlock extends BaseEntityBlock {
             return recipe;
         }
         return null;
+    }
+
+    //Ignore template slot.
+    @Nullable
+    private SmithingTransformRecipe findSmithingTransformRecipe(Level level, ItemStack base, ItemStack addition) {
+        for (RecipeHolder<?> holder : level.getRecipeManager().getRecipes()) {
+            if (!(holder.value() instanceof SmithingTransformRecipe recipe)) continue;
+            if (!recipe.isBaseIngredient(base)) continue;
+            if (!recipe.isAdditionIngredient(addition)) continue;
+            return recipe;
+        }
+        return null;
+    }
+
+    //Assemble the smithing transform result from the base and addition, preserving the base's stack size.
+    private ItemStack assembleSmithingResult(SmithingTransformRecipe recipe, ItemStack base, ItemStack addition, Level level) {
+        SmithingRecipeInput input = new SmithingRecipeInput(ItemStack.EMPTY, base, addition);
+        return recipe.assemble(input, level.registryAccess());
     }
 
     //Check whether a great rune/tablet can be applied and returns the outcome without mutating anything.
@@ -266,7 +297,17 @@ public class SoulForgeBlock extends BaseEntityBlock {
         return false;
     }
 
-    //Sends an action bar message server-side only.
+    //Soul flame particle effects.
+    private void spawnSoulFireParticles(Level level, BlockPos pos) {
+        for (int i = 0; i < 20; i++) {
+            double vx = level.random.nextGaussian() * 0.1;
+            double vy = level.random.nextDouble() * 0.1 + 0.02;
+            double vz = level.random.nextGaussian() * 0.1;
+            level.addParticle(ParticleTypes.SOUL_FIRE_FLAME, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, vx, vy, vz);
+        }
+    }
+
+    //Send an action bar message server-side only.
     private void sendMessage(Level level, Player player, String key) {
         if (!level.isClientSide()) player.displayClientMessage(Component.translatable(key), true);
     }
