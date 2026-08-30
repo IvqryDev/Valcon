@@ -13,7 +13,8 @@
     "FeatherCloakAccessoryMixin",
     "FeatherCloakArmorMixin",
     "ShieldEventsMixin",
-    "TooltipEventsMixin"
+    "TooltipEventsMixin",
+    "BoatFallDamageMixin"
   ],
   "client": [
     "client.AbstractContainerScreenMixin"
