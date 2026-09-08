@@ -94,6 +94,17 @@ dependencies {
     compileOnly "maven.modrinth:tfjmPSbI:xDwRcEoZ"
     localRuntime "maven.modrinth:tfjmPSbI:xDwRcEoZ"
 
+    //No Man's Land
+    compileOnly "maven.modrinth:kjZCvAn6:In8Nao9g"
+    localRuntime "maven.modrinth:kjZCvAn6:In8Nao9g"
+
+    //Jaden's Nether Expansion
+    compileOnly "maven.modrinth:v3UlehfS:NactTrv2"
+    localRuntime "maven.modrinth:v3UlehfS:NactTrv2"
+
+    //Spell Engine
+    compileOnly "maven.modrinth:XvoWJaA2:sm8aXLMc"
+    localRuntime "maven.modrinth:XvoWJaA2:sm8aXLMc"
 
     //Blueprint
     compileOnly "com.teamabnormals:blueprint:1.21.1-8.1.1"
