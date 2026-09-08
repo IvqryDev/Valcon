@@ -15,7 +15,8 @@
     "ShieldEventsMixin",
     "TooltipEventsMixin",
     "BoatFallDamageMixin",
-    "SmithingTableMixin"
+    "SmithingTableMixin",
+    "TreacherousFireBlockMixin"
   ],
   "client": [
     "client.AbstractContainerScreenMixin"

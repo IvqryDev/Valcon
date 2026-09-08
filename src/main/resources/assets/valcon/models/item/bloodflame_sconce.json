@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld_rod",
   "textures": {
-    "layer0": "valcon:item/ashen_steel_handle"
+    "layer0": "valcon:item/bloodflame_sconce"
   }
 }

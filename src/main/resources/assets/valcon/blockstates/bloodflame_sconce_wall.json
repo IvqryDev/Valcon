@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "valcon:block/bloodflame_sconce_wall"
+    },
+    "facing=west": {
+      "model": "valcon:block/bloodflame_sconce_wall",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "valcon:block/bloodflame_sconce_wall",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "valcon:block/bloodflame_sconce_wall",
+      "y": 180
+    }
+  }
+}

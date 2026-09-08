@@ -4,7 +4,7 @@ license="LGPL-3.0"
 
 [[mods]]
 modId="valcon"
-version="0.9"
+version="0.9.1"
 logoFile = "logo.png"
 displayName="Valcon"
 description='''
@@ -195,6 +195,27 @@ side="BOTH"
 
 [[dependencies.valcon]]
 modId="manual_labour"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="netherexp"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="lodestone"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="elysium_api"
 type="required"
 versionRange="*"
 ordering="AFTER"

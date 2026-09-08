@@ -2,6 +2,8 @@ package net.ivqrydev.valcon.block;
 
 import net.ivqrydev.valcon.Valcon;
 import net.ivqrydev.valcon.block.custom.BastStatueBlock;
+import net.ivqrydev.valcon.block.custom.BloodflameSconceBlock;
+import net.ivqrydev.valcon.block.custom.BloodflameSconceWallBlock;
 import net.ivqrydev.valcon.block.custom.SoulForgeBlock;
 import net.ivqrydev.valcon.item.ModItems;
 import net.minecraft.world.effect.MobEffects;
@@ -15,7 +17,6 @@ import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -56,6 +57,25 @@ public class ModBlocks {
                     .strength(3.0F, 6.0F)
                     .sound(SoundType.BASALT)
             ));
+
+    public static final DeferredBlock<BloodflameSconceBlock> BLOODFLAME_SCONCE = registerBlock("bloodflame_sconce",
+            () -> new BloodflameSconceBlock(BlockBehaviour.Properties.of()
+                    .noCollission()
+                    .instabreak()
+                    .lightLevel((state) -> 9)
+                    .sound(SoundType.WOOD)
+                    .pushReaction(PushReaction.DESTROY)
+            ));
+
+    public static final DeferredBlock<BloodflameSconceWallBlock> BLOODFLAME_SCONCE_WALL = registerBlock("bloodflame_sconce_wall",
+            () -> new BloodflameSconceWallBlock(BlockBehaviour.Properties.of()
+                    .noCollission()
+                    .instabreak()
+                    .lightLevel((state) -> 9)
+                    .sound(SoundType.WOOD)
+                    .pushReaction(PushReaction.DESTROY)
+                    .dropsLike(BLOODFLAME_SCONCE.get())
+            ), false);
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

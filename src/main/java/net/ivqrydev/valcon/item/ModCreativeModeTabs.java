@@ -45,6 +45,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MYTHRIL_PLATING);
                         output.accept(ModItems.ASHEN_STEEL_PLATING);
 
+                        output.accept(ModBlocks.BLOODFLAME_SCONCE);
+
                         output.accept(ModItems.STAR_TAKER_MUSIC_DISC);
                         output.accept(ModItems.DEVIL_TRIGGER_MUSIC_DISC);
                     }).build());
