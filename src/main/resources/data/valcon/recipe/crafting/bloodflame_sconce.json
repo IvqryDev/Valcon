@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "///",
+    "/S/",
+    "///"
+  ],
+  "key": {
+    "/": {
+      "item": "nomansland:sconce_torch"
+    },
+    "S":  {
+      "item": "netherexp:treacherous_wax"
+    }
+  },
+  "result": {
+    "id": "valcon:bloodflame_sconce",
+    "count": 8
+  }
+}
