@@ -16,7 +16,8 @@
     "TooltipEventsMixin",
     "BoatFallDamageMixin",
     "SmithingTableMixin",
-    "TreacherousFireBlockMixin"
+    "TreacherousFireBlockMixin",
+    "CurioBaseItemMixin"
   ],
   "client": [
     "client.AbstractContainerScreenMixin"
