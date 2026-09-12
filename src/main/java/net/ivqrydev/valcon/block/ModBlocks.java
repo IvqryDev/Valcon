@@ -6,9 +6,11 @@ import net.ivqrydev.valcon.block.custom.BloodflameSconceBlock;
 import net.ivqrydev.valcon.block.custom.BloodflameSconceWallBlock;
 import net.ivqrydev.valcon.block.custom.SoulForgeBlock;
 import net.ivqrydev.valcon.item.ModItems;
+import net.minecraft.core.Direction;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.StandingAndWallBlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -58,7 +60,7 @@ public class ModBlocks {
                     .sound(SoundType.BASALT)
             ));
 
-    public static final DeferredBlock<BloodflameSconceBlock> BLOODFLAME_SCONCE = registerBlock("bloodflame_sconce",
+    public static final DeferredBlock<BloodflameSconceBlock> BLOODFLAME_SCONCE = BLOCKS.register("bloodflame_sconce",
             () -> new BloodflameSconceBlock(BlockBehaviour.Properties.of()
                     .noCollission()
                     .instabreak()
@@ -67,7 +69,7 @@ public class ModBlocks {
                     .pushReaction(PushReaction.DESTROY)
             ));
 
-    public static final DeferredBlock<BloodflameSconceWallBlock> BLOODFLAME_SCONCE_WALL = registerBlock("bloodflame_sconce_wall",
+    public static final DeferredBlock<BloodflameSconceWallBlock> BLOODFLAME_SCONCE_WALL = BLOCKS.register("bloodflame_sconce_wall",
             () -> new BloodflameSconceWallBlock(BlockBehaviour.Properties.of()
                     .noCollission()
                     .instabreak()
@@ -75,19 +77,16 @@ public class ModBlocks {
                     .sound(SoundType.WOOD)
                     .pushReaction(PushReaction.DESTROY)
                     .dropsLike(BLOODFLAME_SCONCE.get())
-            ), false);
+            ));
+
+    static {
+        ModItems.ITEMS.register("bloodflame_sconce", () -> new StandingAndWallBlockItem(
+                BLOODFLAME_SCONCE.get(), BLOODFLAME_SCONCE_WALL.get(), new Item.Properties(), Direction.DOWN));
+    }
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
-        return toReturn;
-    }
-
-    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block, boolean registerItem) {
-        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
-        if (registerItem) {
-            registerBlockItem(name, toReturn);
-        }
         return toReturn;
     }
 
