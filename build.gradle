@@ -113,6 +113,22 @@ dependencies {
     //Accessories
     compileOnly "io.wispforest:accessories-neoforge:1.1.0-beta.52+1.21.1"
     localRuntime "io.wispforest:accessories-neoforge:1.1.0-beta.52+1.21.1"
+
+    //Iron's Gems and Jewelry
+    compileOnly "maven.modrinth:cTagjDuu:MCWj9fXj"
+    localRuntime "maven.modrinth:cTagjDuu:MCWj9fXj"
+
+    //Iron's Lib
+    compileOnly "maven.modrinth:9nfaJPtX:sQyzhxuH"
+    localRuntime "maven.modrinth:9nfaJPtX:sQyzhxuH"
+
+    //Atlas API
+    compileOnly "maven.modrinth:7e9kzq9t:IkS0pyUg"
+    localRuntime "maven.modrinth:7e9kzq9t:IkS0pyUg"
+
+    //Curios API
+    compileOnly "maven.modrinth:vvuO3ImH:yohfFbgD"
+    localRuntime "maven.modrinth:vvuO3ImH:yohfFbgD"
 }
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
     var replaceProperties = [

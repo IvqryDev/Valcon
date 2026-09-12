@@ -4,7 +4,7 @@ license="LGPL-3.0"
 
 [[mods]]
 modId="valcon"
-version="0.9.1.1"
+version="0.9.1.1.hotfix"
 logoFile = "logo.png"
 displayName="Valcon"
 description='''
@@ -209,6 +209,13 @@ side="BOTH"
 
 [[dependencies.valcon]]
 modId="elysium_api"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.valcon]]
+modId="irons_jewelry"
 type="required"
 versionRange="*"
 ordering="AFTER"
