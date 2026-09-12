@@ -131,13 +131,6 @@ ordering="AFTER"
 side="BOTH"
 
 [[dependencies.valcon]]
-modId="azurelibarmor"
-type="required"
-versionRange="*"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.valcon]]
 modId="cloth_config"
 type="required"
 versionRange="*"
