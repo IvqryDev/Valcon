@@ -27,7 +27,7 @@ public final class ArmorDurabilityDefense {
     //Defense floor.
     private static final double MIN_DEFENSE = 0.5D;
 
-    private static final double DEFENSE_RANGE = 1.0D - MIN_DEFENSE;               // 0.5
+    private static final double DEFENSE_RANGE = 1.0D - MIN_DEFENSE; // 0.5
     private static final double DURABILITY_RANGE = 1.0D - LOWER_DURABILITY_CUTOFF; // 0.7
 
     private record SlotModifier(EquipmentSlot slot, ResourceLocation modifierId) {
