@@ -1,6 +1,11 @@
 {
   "values": [
     "valcon:ashen_steel_ingot",
-    "valcon:soul_steel_ingot"
+    "valcon:soul_steel_ingot",
+    "valcon:mythril_plating",
+    "valcon:silver_plating",
+    "valcon:gold_plating",
+    "valcon:iron_plating",
+    "valcon:ashen_plating"
   ]
 }
