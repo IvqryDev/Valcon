@@ -4,7 +4,7 @@
       "burn_time": 1600
     },
     "netherexp:fossil_fuel": {
-      "burn_time": 800
+      "burn_time": 1200
     },
     "minecraft:coal": {
       "burn_time": 800
