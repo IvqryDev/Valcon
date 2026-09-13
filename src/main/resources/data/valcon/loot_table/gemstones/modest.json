@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "jewelry:citrine",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jewelry:topaz",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "valcon:gemstones/modest"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        { "condition": "neoforge:loot_table_id", "loot_table_id": "caverns_and_chasms:blocks/silver_ore" },
+        { "condition": "neoforge:loot_table_id", "loot_table_id": "caverns_and_chasms:blocks/deepslate_silver_ore" },
+        { "condition": "neoforge:loot_table_id", "loot_table_id": "caverns_and_chasms:blocks/soul_silver_ore" },
+
+        { "condition": "neoforge:loot_table_id", "loot_table_id": "oreganized:blocks/silver_ore" },
+        { "condition": "neoforge:loot_table_id", "loot_table_id": "oreganized:blocks/deepslate_silver_ore" }
+      ]
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.12
+    }
+  ],
+  "table": "valcon:gemstones/precious"
+}
